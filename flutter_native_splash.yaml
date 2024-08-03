@@ -3,7 +3,7 @@ flutter_native_splash:
   image: assets/images/logo.png
 
   android_12:
-    image: assets/images/logo_android12_native_splash.png
+    image: assets/images/native_splash_screen/fatto_splash_screen.png
     color: "#ffffff"
   android: true
   ios: true
