@@ -114,8 +114,7 @@ flutter:
           weight: 300
         - asset: assets/fonts/Almarai-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Almarai-Medium.ttf
-          weight: 500
+        
         - asset: assets/fonts/Almarai-Bold.ttf
           weight: 700
         - asset: assets/fonts/Almarai-ExtraBold.ttf
@@ -146,15 +145,15 @@ flutter:
           weight: 800   
     - family: Manrope
       fonts:
-        - asset: assets/fonts/Manrope-Regular.ttf
+        - asset: assets/fonts/Manrope-Regular.otf
           weight: 400
-        - asset: assets/fonts/Manrope-Light.ttf
+        - asset: assets/fonts/Manrope-Light.otf
           weight: 300
         - asset: assets/fonts/manrope-medium.otf
           weight: 500
-        - asset: assets/fonts/Manrope-Bold.ttf
+        - asset: assets/fonts/Manrope-Bold.otf
           weight: 700
-        - asset: assets/fonts/Manrope-ExtraBold.ttf
+        - asset: assets/fonts/Manrope-ExtraBold.otf
           weight: 800    
     - family: Raleway
       fonts:
@@ -170,11 +169,11 @@ flutter:
           weight: 800        
     - family: SFProDisplay
       fonts:
-        - asset: assets/fonts/SFProDisplay-Regular.ttf
+        - asset: assets/fonts/SFPRODISPLAY-REGULAR.OTF
           weight: 400
-        - asset: assets/fonts/SFProDisplay-Medium.ttf
+        - asset: assets/fonts/SFPRODISPLAY-MEDIUM.OTF
           weight: 500
-        - asset: assets/fonts/SFProDisplay-Bold.ttf
+        - asset: assets/fonts/SFPRODISPLAY-BOLD.OTF
           weight: 700        
 
 
