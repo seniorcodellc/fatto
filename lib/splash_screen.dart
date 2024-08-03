@@ -20,6 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return CustomBackground(
+      
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
