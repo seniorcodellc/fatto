@@ -55,7 +55,6 @@ abstract class AppStyles {
     fontFamily: 'Inter',
   );
 
-  // Inter Medium Styles
   static const TextStyle styleInterMedium9 = TextStyle(
     fontSize: 9,
     fontWeight: FontWeight.w500,
@@ -80,7 +79,6 @@ abstract class AppStyles {
     fontFamily: 'Inter',
   );
 
-  // Inter Semi Bold Styles
   static const TextStyle styleInterSemiBold12 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w600,
@@ -98,7 +96,6 @@ abstract class AppStyles {
     fontWeight: FontWeight.w600,
     fontFamily: 'Inter',
   );
-
 
   static const TextStyle styleInterBold14 = TextStyle(
     fontSize: 14,
@@ -129,7 +126,6 @@ abstract class AppStyles {
     fontWeight: FontWeight.w700,
     fontFamily: 'Inter',
   );
-
 
   static const TextStyle stylePoppinsRegular9 = TextStyle(
     fontSize: 9,
@@ -173,7 +169,6 @@ abstract class AppStyles {
     fontFamily: 'Poppins',
   );
 
-
   static const TextStyle stylePoppinsSemiBold9 = TextStyle(
     fontSize: 9,
     fontWeight: FontWeight.w600,
@@ -191,7 +186,6 @@ abstract class AppStyles {
     fontWeight: FontWeight.w600,
     fontFamily: 'Poppins',
   );
-
 
   static const TextStyle styleNunitoSansRegular12 = TextStyle(
     fontSize: 12,
@@ -217,7 +211,6 @@ abstract class AppStyles {
     fontFamily: 'Nunito Sans',
   );
 
-  // Additional Styles
   static const TextStyle styleRalewayBold17 = TextStyle(
     fontSize: 17,
     fontWeight: FontWeight.w700,
