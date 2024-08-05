@@ -1,17 +1,19 @@
 class AppStrings {
   static const String appName = "fatto";
   static const String splashName = 'Fatto';
-  static const String onBoarding1Title ='Online Handmade Store';
-  static const String onBoarding1SubTitle ='Discover all style and budgets of fashion , eccessories,and more from 500+ brands in your hand.';
+  static const String onBoarding1Title = 'Online Handmade Store';
+  static const String onBoarding1SubTitle =
+      'Discover all style and budgets of fashion , eccessories,and more from 500+ brands in your hand.';
   static const String onBoarding2Title = 'Delivery Right to Your Doorstep';
-  static const String onBoarding2SubTitle ='Sit back, and enjoy the convenience of our drivers delivering your order to your doorstep.';
+  static const String onBoarding2SubTitle =
+      'Sit back, and enjoy the convenience of our drivers delivering your order to your doorstep.';
   static const String onBoarding3Title = 'Get Support From Our Skilled Team';
-  static const String onBoarding3SubTitle ='If our products don\'t meet your expectations, we\'re available 24/7 to assist you.';
+  static const String onBoarding3SubTitle = 'If our products don\'t meet your expectations, we\'re available 24/7 to assist you.';
   static const String skip = 'SKIP';
   static const String next = 'Next';
   static const String back = 'Back';
   static const String welcomeBack = 'Welcome Back!';
-  static const String enterYourEmailText ='Enter your email to start shopping and get awesome deals today!';
+  static const String enterYourEmailText = 'Enter your email to start shopping and get awesome deals today!';
   static const String email = 'Email';
   static const String password = 'Password';
   static const String forgetYourPassword = 'Forgot your password?';
@@ -22,10 +24,11 @@ class AppStrings {
   static const String dontHaveAnAccount = 'Don’t have an account? ';
   static const String register = 'Register';
   static const String createAccount = 'Create Account';
-  static const String fillInYourDetailsText ='Fill in your details below to get started on a seamless shopping experience.';
+  static const String fillInYourDetailsText = 'Fill in your details below to get started on a seamless shopping experience.';
   static const String firstName = 'First Name';
   static const String lastName = 'Last Name';
-  static const String byClickingCreateAccountText ='By clicking Create Account, you acknowledge you have read and agreed to our ';
+  static const String byClickingCreateAccountText =
+      'By clicking Create Account, you acknowledge you have read and agreed to our ';
   static const String termsOfUse = 'Terms of Use';
   static const String and = 'and';
   static const String privacyPolicy = 'Privacy Policy';
@@ -50,7 +53,7 @@ class AppStrings {
   static const String newInBagsAndWatche = 'New in Bags & watches';
   static const String newInCrochetClothes = 'New in Crochet Clothes';
   static const String newInAntiqesAndCeramic = 'New in Antiqes & Ceramic';
-  static const String newInWeddingAndSocialEvents ='New in Wedding &  Social events ';
+  static const String newInWeddingAndSocialEvents = 'New in Wedding &  Social events ';
   static const String softwareServices = 'Software Services';
   static const String camera = 'Camera';
   static const String gallery = 'Gallery';
@@ -94,11 +97,11 @@ class AppStrings {
   static const String shopNow = 'SHOP NOW';
   static const String favorite = 'Favorite';
   static const String items = 'items';
-  static const String areYouSureWantedToDelete ='Are You Sure You wanted To Delete This Item ?';
+  static const String areYouSureWantedToDelete = 'Are You Sure You wanted To Delete This Item ?';
   static const String no = 'No';
   static const String yes = 'Yes';
   static const String signInToCheckout = 'Sign in to checkout';
-  static const String logInToContinueYourOrder ='Log in to continue your order';
+  static const String logInToContinueYourOrder = 'Log in to continue your order';
   static const String google = 'Google';
   static const String facebook = 'Facebook';
   static const String forgotPassword = 'Forgot password?';
@@ -115,7 +118,6 @@ class AppStrings {
   static const String stateProvinces = 'State / provinces';
   static const String cityDistrict = 'City / district';
   static const String postalCode = 'Postal code';
-  static const String phoneNumber = 'Phone number';
   static const String save = 'SAVE';
   static const String shippingAddress = 'Shipping address';
   static const String change = 'Change';
@@ -134,23 +136,24 @@ class AppStrings {
   static const String offForYourNextOrder = 'off for your next order';
   static const String giftFromCustomerCare = 'Gift From Customer Care';
   static const String offYourNextPurchase = '15% off your next purchase';
-  static const String thisIsASecure128Bit='This is a secure 128-bit SSL Encrypted payment. You’re safe';
-  static const String cardNumber='Card Number';
-  static const String nameOnCard='Name On Card';
-  static const String expMMYYYY='Exp MM/YYYY';
-  static const String cvv='CVV'; 
-  static const String youWillNotBeCharged ='You will not be charged until the order process is complete';
+  static const String thisIsASecure128Bit = 'This is a secure 128-bit SSL Encrypted payment. You’re safe';
+  static const String cardNumber = 'Card Number';
+  static const String nameOnCard = 'Name On Card';
+  static const String expMMYYYY = 'Exp MM/YYYY';
+  static const String cvv = 'CVV';
+  static const String youWillNotBeCharged = 'You will not be charged until the order process is complete';
   static const String confirmOrder = 'CONFIRM ORDER';
   static const String paymentIsInProgress = 'Payment is in progress';
   static const String pleaseWaitAFewMoments = 'Please, wait a few moments';
   static const String done = 'Done!';
-  static const String yourCardHasBeenSuccessfullyCharged ='You card has been successfully charged';
+  static const String yourCardHasBeenSuccessfullyCharged = 'You card has been successfully charged';
   static const String trackMyOrser = 'Track My Order';
   static const String toRecieve = 'To Recieve';
   static const String trackingNumber = 'Tracking Number';
   static const String packed = 'Packed';
-  static const String yourParcelIsPackedAndWillBeHandedOverToOurDeliveryPartner ='Your parcel is packed and will be handed over to our delivery partner.';
-  static const String onTheWayToLogisticFacility ='On the Way to Logistic Facility';
+  static const String yourParcelIsPackedAndWillBeHandedOverToOurDeliveryPartner =
+      'Your parcel is packed and will be handed over to our delivery partner.';
+  static const String onTheWayToLogisticFacility = 'On the Way to Logistic Facility';
   static const String expectedOn = 'Expected on';
   static const String shipped = 'Shipped';
   static const String outForDelivery = 'Out for Delivery';
@@ -164,13 +167,16 @@ class AppStrings {
   static const String update = 'Update';
   static const String changePasswordCapital = 'CHANGE PASSWORD';
   static const String typesOfDataWeCollect = '1. Types of Data We Collect';
-  static const String type1Description ='t, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+  static const String type1Description =
+      't, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
   static const String useOfYourPersonalData = '2. Use of Your Personal Data';
-  static const String type2Description ='Magna etiam tempor orci eu lobortis elementum nibh. Vulputate enim nulla aliquet porttitor lacus. Orci sagittis eu volutpat odio. Cras semper auctor neque vitae tempus quam pellentesque nec. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Commodo elit at imperdiet dui. Nisi vitae suscipit tellus mauris a diam. Erat pellentesque adipiscing commodo elit at imperdiet dui. Mi ipsum faucibus vitae aliquet nec ullamcorper. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et.';
-  static const String disclosureOfYourPersonalData ='3. Disclosure of Your Personal Data';
-  static const String type3Description ='Consequat id porta nibh venenatis cras sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Nibh tellus molestie nunc non blandit massa. Quam pellentesque nec nam aliquam sem et tortor consequat id. Faucibus vitae aliquet nec ullamcorper sit amet risus. Nunc consequat interdum varius sit amet. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Pulvinar pellentesque habitant morbi tristique senectus et. Lorem donec massa sapien faucibus et molestie. Massa tempor nec feugiat nisl pretium fusce id. Lacinia at quis risus sed vulputate odio. Integer vitae justo eget magna fermentum iaculis. Eget gravida cum sociis natoque penatibus et magnis.';
+  static const String type2Description =
+      'Magna etiam tempor orci eu lobortis elementum nibh. Vulputate enim nulla aliquet porttitor lacus. Orci sagittis eu volutpat odio. Cras semper auctor neque vitae tempus quam pellentesque nec. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Commodo elit at imperdiet dui. Nisi vitae suscipit tellus mauris a diam. Erat pellentesque adipiscing commodo elit at imperdiet dui. Mi ipsum faucibus vitae aliquet nec ullamcorper. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et.';
+  static const String disclosureOfYourPersonalData = '3. Disclosure of Your Personal Data';
+  static const String type3Description =
+      'Consequat id porta nibh venenatis cras sed. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Nibh tellus molestie nunc non blandit massa. Quam pellentesque nec nam aliquam sem et tortor consequat id. Faucibus vitae aliquet nec ullamcorper sit amet risus. Nunc consequat interdum varius sit amet. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Pulvinar pellentesque habitant morbi tristique senectus et. Lorem donec massa sapien faucibus et molestie. Massa tempor nec feugiat nisl pretium fusce id. Lacinia at quis risus sed vulputate odio. Integer vitae justo eget magna fermentum iaculis. Eget gravida cum sociis natoque penatibus et magnis.';
   static const String suggested = 'Suggested';
-  static const String areYouSureYouWantToLogOut ='Are you sure you want to log out?';
+  static const String areYouSureYouWantToLogOut = 'Are you sure you want to log out?';
   static const String cancel = 'cancel';
   static const String yesLogOut = 'yes, logout';
   static const String addAddress = 'Add Address';
@@ -179,4 +185,7 @@ class AppStrings {
   static const String locationName = 'Location Name';
   static const String locationAddress = 'Location Address';
   static const String saveLocation = 'Save Location';
+  final String phoneError = 'phoneError';
+
+  final String phoneNumber = 'phoneNumber';
 }
