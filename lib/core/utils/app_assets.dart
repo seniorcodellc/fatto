@@ -1,9 +1,6 @@
 class AppAssets {
-
-
-
   // Splash Screen logo
-  
+
   static const String logo = "assets/images/logo.png";
   // onboarding Screen Images
   static const String onboarding1 =
@@ -16,10 +13,103 @@ class AppAssets {
   //account Screen
   static const String accountPhoto = "assets/images/accountPhoto.png";
 
-  // TODO : those will come from an API ?!
   //Home Screen
+  //................ cover area..................................
+  static const String cover = "assets/images/homeScreen/cover.png";
 
-  // cart
+  //................Discount area..................................
+
+  static const String decorations =
+      "assets/images/homeScreen/discount/decorations.png";
+  static const String crochet = "assets/images/homeScreen/discount/crochet.png";
+  static const String wood = "assets/images/homeScreen/discount/wood.png";
+  static const String bags = "assets/images/homeScreen/discount/bags.png";
+
+  //................Promotion area..................................
+
+  static const String promotionBackGround1 =
+      "assets/images/homeScreen/promotion/Rectangle1.png";
+  static const String promotionFashion =
+      "assets/images/homeScreen/promotion/1.png";
+
+  static const String promotionBackGround2 =
+      "assets/images/homeScreen/promotion/Rectangle2.png";
+
+  static const String promotionBackGround3 =
+      "assets/images/homeScreen/promotion/Rectangle3.png";
+  static const String promotionMakeup =
+      "assets/images/homeScreen/promotion/2.png";
+
+  static const String hand1 = "assets/images/homeScreen/promotion/hand1.png";
+  static const String hand2 = "assets/images/homeScreen/promotion/hand2.png";
+  static const String hand3 = "assets/images/homeScreen/promotion/hand3.png";
+  static const String hand4 = "assets/images/homeScreen/promotion/hand4.png";
+
+  static const String promotionBackGround4 =
+      "assets/images/homeScreen/promotion/Rectangle4.png";
+
+  static const String promotionBackGround5 =
+      "assets/images/homeScreen/promotion/Rectangle5.png";
+  static const String promotionShoes =
+      "assets/images/homeScreen/promotion/3.png";
+
+  //................Bags area..................................
+
+  static const String pinkBag =
+      "assets/images/homeScreen/categories/bags/pinkBag.png";
+  static const String brownCandy =
+      "assets/images/homeScreen/categories/bags/brownCandy.png";
+  static const String offwhite =
+      "assets/images/homeScreen/categories/bags/offwhite.png";
+
+  //................clothes area..................................
+
+  static const String shawl =
+      "assets/images/homeScreen/categories/clothes/shawl.png";
+  static const String cardigan =
+      "assets/images/homeScreen/categories/clothes/cardigan.png";
+  static const String blouse =
+      "assets/images/homeScreen/categories/clothes/blouse.png";
+
+  //----------------------antiques area -------------------------------
+  static const String resin =
+      "assets/images/homeScreen/categories/antiques/resin.png";
+  static const String pottery =
+      "assets/images/homeScreen/categories/antiques/pottery.png";
+  static const String potteryClay =
+      "assets/images/homeScreen/categories/antiques/potteryClay.png";
+
+  //----------------------wedding area -------------------------------
+  static const String cards =
+      "assets/images/homeScreen/categories/wedding/cards.png";
+  static const String cakes =
+      "assets/images/homeScreen/categories/wedding/cakes.png";
+  static const String eventOrganizing =
+      "assets/images/homeScreen/categories/wedding/eventOrganizing.png";
+
+  //----------------------Software area -------------------------------
+
+  static const String webDesign =
+      "assets/images/homeScreen/categories/sw/webDesign.png";
+  static const String development =
+      "assets/images/homeScreen/categories/sw/development.png";
+  static const String graphicDesign =
+      "assets/images/homeScreen/categories/sw/graphicDesign.png";
+
+  // reviews Screen Images
+  static const String reviewer = "assets/images/homeScreen/feedback.png";
+
+  // cart Screen Images
+  static const String item1 = "assets/images/homeScreen/cart/1.png";
+  static const String item2 = "assets/images/homeScreen/cart/2.png";
+  static const String item3 = "assets/images/homeScreen/cart/3.png";
+  static const String item4 = "assets/images/homeScreen/cart/4.png";
+  static const String empty = "assets/images/homeScreen/cart/Vector.png";
+
+  // favorite Screen Images
+
+  static const String favItem1 =
+      "assets/images/homeScreen/categories/clothes/shawl.png";
 
   static const String search = "assets/icons/search.svg";
 
@@ -67,5 +157,4 @@ class AppAssets {
   static const String user = "assets/icons/user.svg";
   static const String userIcon = "assets/icons/user_icon.png";
   static const String walletLine = "assets/icons/wallet_line.svg";
-
 }
