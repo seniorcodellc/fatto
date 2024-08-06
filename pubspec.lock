@@ -301,6 +301,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.0"
+  inspection:
+    dependency: "direct main"
+    description:
+      name: inspection
+      sha256: b8814a0edf6c5b85e1ae97dcde5e4a0df18af446a173ed585266b729b533df87
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.13"
   intl:
     dependency: transitive
     description:

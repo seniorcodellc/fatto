@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:fatto/core/extensions.dart';
+
 import 'exports.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -20,11 +22,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return CustomBackground(
-      
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(AppAssets.logo),
+          Image.asset(AppAssets().logo),
+          10.vs,
+          20.hs,
         ],
       ),
     );

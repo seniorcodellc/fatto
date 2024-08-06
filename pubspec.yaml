@@ -43,6 +43,7 @@ dependencies:
   flutter_local_notifications:
   dartz:
   dio:
+  inspection:
 
 dev_dependencies:
   flutter_test:
