@@ -1,135 +1,99 @@
-mixin PngImages {
-  static String pngPath = "assets/images/";
-
-  String logo = "${pngPath}logo.png";
-  // onboarding Screen Images
-  String onboarding1 = "${pngPath}onboardingScreens/onboarding1.png";
-  String onboarding2 = "${pngPath}onboardingScreens/onboarding2.png";
-  String onboarding3 = "${pngPath}onboardingScreens/onboarding3.png";
-
-  //account Screen
-  String accountPhoto = "${pngPath}accountPhoto.png";
-
-  //Home Screen
-  //................ cover area..................................
-  String cover = "${pngPath}homeScreen/cover.png";
-
-  //................Discount area..................................
-
-  String decorations = "${pngPath}homeScreen/discount/decorations.png";
-  String crochet = "${pngPath}homeScreen/discount/crochet.png";
-  String wood = "${pngPath}homeScreen/discount/wood.png";
-  String bags = "${pngPath}homeScreen/discount/bags.png";
-
-  //................Promotion area..................................
-
-  String promotionBackGround1 = "assets/images/homeScreen/promotion/Rectangle1.png";
-  String promotionFashion = "assets/images/homeScreen/promotion/1.png";
-
-  String promotionBackGround2 = "assets/images/homeScreen/promotion/Rectangle2.png";
-
-  String promotionBackGround3 = "assets/images/homeScreen/promotion/Rectangle3.png";
-  String promotionMakeup = "assets/images/homeScreen/promotion/2.png";
-
-  String hand1 = "assets/images/homeScreen/promotion/hand1.png";
-  String hand2 = "assets/images/homeScreen/promotion/hand2.png";
-  String hand3 = "assets/images/homeScreen/promotion/hand3.png";
-  String hand4 = "assets/images/homeScreen/promotion/hand4.png";
-
-  String promotionBackGround4 = "assets/images/homeScreen/promotion/Rectangle4.png";
-
-  String promotionBackGround5 = "assets/images/homeScreen/promotion/Rectangle5.png";
-  String promotionShoes = "assets/images/homeScreen/promotion/3.png";
-
-  //................Bags area..................................
-
-  String pinkBag = "assets/images/homeScreen/categories/bags/pinkBag.png";
-  String brownCandy = "assets/images/homeScreen/categories/bags/brownCandy.png";
-  String offwhite = "assets/images/homeScreen/categories/bags/offwhite.png";
-
-  //................clothes area..................................
-
-  String shawl = "assets/images/homeScreen/categories/clothes/shawl.png";
-  String cardigan = "assets/images/homeScreen/categories/clothes/cardigan.png";
-  String blouse = "assets/images/homeScreen/categories/clothes/blouse.png";
-
-  //----------------------antiques area -------------------------------
-  String resin = "assets/images/homeScreen/categories/antiques/resin.png";
-  String pottery = "assets/images/homeScreen/categories/antiques/pottery.png";
-  String potteryClay = "assets/images/homeScreen/categories/antiques/potteryClay.png";
-
-  //----------------------wedding area -------------------------------
-  String cards = "assets/images/homeScreen/categories/wedding/cards.png";
-  String cakes = "assets/images/homeScreen/categories/wedding/cakes.png";
-  String eventOrganizing = "assets/images/homeScreen/categories/wedding/eventOrganizing.png";
-
-  //----------------------Software area -------------------------------
-
-  String webDesign = "assets/images/homeScreen/categories/sw/webDesign.png";
-  String development = "assets/images/homeScreen/categories/sw/development.png";
-  String graphicDesign = "assets/images/homeScreen/categories/sw/graphicDesign.png";
-
-  // reviews Screen Images
-  String reviewer = "assets/images/homeScreen/feedback.png";
-
-  // cart Screen Images
-  String item1 = "assets/images/homeScreen/cart/1.png";
-  String item2 = "assets/images/homeScreen/cart/2.png";
-  String item3 = "assets/images/homeScreen/cart/3.png";
-  String item4 = "assets/images/homeScreen/cart/4.png";
-  String empty = "assets/images/homeScreen/cart/Vector.png";
-  String arrow = "assets/icons/arrow.png";
-
-  // favorite Screen Images
-  String add = "assets/icons/add.png";
-  String favItem1 = "assets/images/homeScreen/categories/clothes/shawl.png";
-  String bookmark = "assets/icons/bookmark.png";
-  String calender = "assets/icons/calender.png";
-  String copy = "assets/icons/copy.png";
-  String cart = "assets/icons/cart.png";
-  String deleteBin = "assets/icons/delete_bin.png";
-  String eye = "assets/icons/eye.png";
-  String facebook = "assets/icons/facebook.png";
-  String google = "assets/icons/google.png";
-  String historyLine = "assets/icons/history_line.png";
-  String leftIcon = "assets/icons/left_icon.png";
-  String lockLcon = "assets/icons/lock_icon.png";
-  String mailIcon = "assets/icons/mail_icon.png";
-  String moreSquare = "assets/icons/more_square.png";
-  String rightIcon = "assets/icons/right_icon.png";
-  String profile = "assets/icons/profile.png";
-  String userIcon = "assets/icons/user_icon.png";
-  String store = "assets/icons/store.png";
-  String share = "assets/icons/share.png";
+mixin PngAssets {
+  static const String pngAssets = "assets/images/";
+}
+mixin SvgAssets {
+  static const String svgAssets = "assets/icons/";
 }
 
-mixin SvgImages {
-  static String svgPath = "assets/icons/";
-  String search = "${svgPath}search.svg";
-  String address = "${svgPath}address.svg";
-  String bagFill = "${svgPath}bag_fill.svg";
-  String building = "${svgPath}building.svg";
-  String cameraFill = "${svgPath}camera_fill.svg";
+class AppAssets with PngAssets,SvgAssets {
+  ///Image png
+  static const String logo = "${PngAssets.pngAssets}logo.png";
+  static const String onboarding1 = "${PngAssets.pngAssets}onboarding1.png";
+  static const String onboarding2 = "${PngAssets.pngAssets}onboarding2.png";
+  static const String onboarding3 = "${PngAssets.pngAssets}onboarding3.png";
+  static const String accountPhoto = "${PngAssets.pngAssets}accountPhoto.png";
+  static const String cover = "${PngAssets.pngAssets}cover.png";
+  static const String decorations = "${PngAssets.pngAssets}decorations.png";
+  static const String crochet = "${PngAssets.pngAssets}crochet.png";
+  static const String wood = "${PngAssets.pngAssets}wood.png";
+  static const String bags = "${PngAssets.pngAssets}bags.png";
+  static const String promotionBackGround1 = "${PngAssets.pngAssets}Rectangle1.png";
+  static const String promotionFashion = "${PngAssets.pngAssets}1.png";
+  static const String promotionBackGround2 = "${PngAssets.pngAssets}Rectangle2.png";
+  static const String promotionBackGround3 = "${PngAssets.pngAssets}Rectangle3.png";
+  static const String promotionMakeup = "${PngAssets.pngAssets}2.png";
+  static const String hand1 = "${PngAssets.pngAssets}hand1.png";
+  static const String hand2 = "${PngAssets.pngAssets}hand2.png";
+  static const String hand3 = "${PngAssets.pngAssets}hand3.png";
+  static const String hand4 = "${PngAssets.pngAssets}hand4.png";
+  static const String promotionBackGround4 = "${PngAssets.pngAssets}Rectangle4.png";
+  static const String promotionBackGround5 = "${PngAssets.pngAssets}Rectangle5.png";
+  static const String promotionShoes = "${PngAssets.pngAssets}3.png";
+  static const String pinkBag = "${PngAssets.pngAssets}pinkBag.png";
+  static const String brownCandy = "${PngAssets.pngAssets}brownCandy.png";
+  static const String offWhite = "${PngAssets.pngAssets}offWhite.png";
+  static const String shawl = "${PngAssets.pngAssets}shawl.png";
+  static const String cardigan = "${PngAssets.pngAssets}cardigan.png";
+  static const String blouse = "${PngAssets.pngAssets}blouse.png";
+  static const String resin = "${PngAssets.pngAssets}resin.png";
+  static const String pottery = "${PngAssets.pngAssets}pottery.png";
+  static const String potteryClay = "${PngAssets.pngAssets}potteryClay.png";
+  static const String cards = "${PngAssets.pngAssets}cards.png";
+  static const String cakes = "${PngAssets.pngAssets}cakes.png";
+  static const String eventOrganizing = "${PngAssets.pngAssets}eventOrganizing.png";
+  static const String webDesign = "${PngAssets.pngAssets}webDesign.png";
+  static const String development = "${PngAssets.pngAssets}development.png";
+  static const String graphicDesign = "${PngAssets.pngAssets}graphicDesign.png";
+  static const String reviewer = "${PngAssets.pngAssets}feedback.png";
+  static const String item1 = "${PngAssets.pngAssets}1.png";
+  static const String item2 = "${PngAssets.pngAssets}2.png";
+  static const String item3 = "${PngAssets.pngAssets}3.png";
+  static const String item4 = "${PngAssets.pngAssets}4.png";
+  static const String empty = "${PngAssets.pngAssets}Vector.png";
+  static const String favItem1 = "${PngAssets.pngAssets}shawl.png";
 
-  String clock = "${svgPath}clock.svg";
-
-  String delete = "${svgPath}delete.svg";
-  String edit = "${svgPath}edit.svg";
-  String eyeOff = "assets/icons/eye_off.svg";
-  String flash = "assets/icons/flash.svg";
-  String heart = "assets/icons/heart.svg";
-  String image = "assets/icons/image.svg";
-  String location = "assets/icons/location.svg";
-  String lock = "assets/icons/lock.svg";
-  String logout = "assets/icons/logout.svg";
-  String moreCircle = "assets/icons/more_circle.svg";
-  String priceTag = "assets/icons/price_tag.svg";
-  String qrScan = "assets/icons/qr_scan.svg";
-  String settings = "assets/icons/settings.svg";
-  String shieldCheck = "assets/icons/shield_check.svg";
-  String shieldDone = "assets/icons/shield_done.svg";
-  String user = "assets/icons/user.svg";
-  String walletLine = "assets/icons/wallet_line.svg";
+  ///Icons svg
+  static const String search = "${SvgAssets.svgAssets}search.svg";
+  static const String add = "${SvgAssets.svgAssets}add.svg";
+  static const String address = "${SvgAssets.svgAssets}address.svg";
+  static const String arrow = "${SvgAssets.svgAssets}arrow.svg";
+  static const String bagFill = "${SvgAssets.svgAssets}bag_fill.svg";
+  static const String bookmark = "${SvgAssets.svgAssets}bookmark.svg";
+  static const String building = "${SvgAssets.svgAssets}building.svg";
+  static const String calender = "${SvgAssets.svgAssets}calender.svg";
+  static const String cameraFill = "${SvgAssets.svgAssets}camera_fill.svg";
+  static const String cart = "${SvgAssets.svgAssets}cart.svg";
+  static const String clock = "${SvgAssets.svgAssets}clock.svg";
+  static const String copy = "${SvgAssets.svgAssets}copy.svg";
+  static const String delete = "${SvgAssets.svgAssets}delete.svg";
+  static const String deleteBin = "${SvgAssets.svgAssets}delete_bin.svg";
+  static const String edit = "${SvgAssets.svgAssets}edit.svg";
+  static const String eye = "${SvgAssets.svgAssets}eye.svg";
+  static const String eyeOff = "${SvgAssets.svgAssets}eye_off.svg";
+  static const String facebook = "${SvgAssets.svgAssets}facebook.svg";
+  static const String flash = "${SvgAssets.svgAssets}flash.svg";
+  static const String google = "${SvgAssets.svgAssets}google.svg";
+  static const String heart = "${SvgAssets.svgAssets}heart.svg";
+  static const String historyLine = "${SvgAssets.svgAssets}history_line.svg";
+  static const String image = "${SvgAssets.svgAssets}image.svg";
+  static const String leftIcon = "${SvgAssets.svgAssets}left_icon.svg";
+  static const String location = "${SvgAssets.svgAssets}location.svg";
+  static const String lock = "${SvgAssets.svgAssets}lock.svg";
+  static const String lockIcon = "${SvgAssets.svgAssets}lock_icon.svg";
+  static const String logout = "${SvgAssets.svgAssets}logout.svg";
+  static const String mailIcon = "${SvgAssets.svgAssets}mail_icon.svg";
+  static const String moreCircle = "${SvgAssets.svgAssets}more_circle.svg";
+  static const String moreSquare = "${SvgAssets.svgAssets}more_square.svg";
+  static const String priceTag = "${SvgAssets.svgAssets}price_tag.svg";
+  static const String profile = "${SvgAssets.svgAssets}profile.svg";
+  static const String qrScan = "${SvgAssets.svgAssets}qr_scan.svg";
+  static const String rightIcon = "${SvgAssets.svgAssets}right_icon.svg";
+  static const String settings = "${SvgAssets.svgAssets}settings.svg";
+  static const String share = "${SvgAssets.svgAssets}share.svg";
+  static const String shieldCheck = "${SvgAssets.svgAssets}shield_check.svg";
+  static const String shieldDone = "${SvgAssets.svgAssets}shield_done.svg";
+  static const String store = "${SvgAssets.svgAssets}store.svg";
+  static const String user = "${SvgAssets.svgAssets}user.svg";
+  static const String userIcon = "${SvgAssets.svgAssets}user_icon.svg";
+  static const String walletLine = "${SvgAssets.svgAssets}wallet_line.svg";
 }
-
-class AppAssets with PngImages, SvgImages {}
