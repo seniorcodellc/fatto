@@ -9,9 +9,16 @@ static final imagePathList = <String> [
 ];
   static final pageController = PageController();
   static int currentPage = 0;
-  static const Map<String,String> onBoardingTexts={
-    // 'AppStrings().onBoarding1':'${AppStrings().on}',
-  };
+  // static const Map<String,String> onBoardingTexts={
+  //   'FirstOnBoardingTitle':AppStrings.onBoarding1Title,
+  //       'FirstOnBoardingSubTitle':AppStrings.onBoarding1Title,
+
+  //   'FirstOnBoardingText':AppStrings.onBoarding1Title,
+  //   'FirstOnBoardingText':AppStrings.onBoarding1Title,
+  //   'FirstOnBoardingText':AppStrings.onBoarding1Title,
+  //   'FirstOnBoardingText':AppStrings.onBoarding1Title,
+
+  // };
 
 
   @override

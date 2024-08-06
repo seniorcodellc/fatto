@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 
-import 'app_routes.dart';
-import '../../featuers/onBoarding/presintation/screens/first_onboarding_screen.dart';
+
+import 'package:fatto/config/routes/app_routes.dart';
+import 'package:fatto/exports.dart';
 
 class FattoRouter {
   Route generateRoute(RouteSettings settings) {
