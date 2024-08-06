@@ -1,9 +1,12 @@
-import 'package:fatto/splash_screen.dart';
-
+import 'config/routes/app_router.dart';
+import 'config/routes/app_routes.dart';
 import 'exports.dart';
+import 'featuers/onBoarding/presintation/screens/first_onboarding_screen.dart';
 
 class FattoApp extends StatelessWidget {
-  const FattoApp({super.key});
+  final FattoRouter appRouter;
+
+  const FattoApp({super.key, required this.appRouter});
 
   // This widget is the root of your application.
   @override
@@ -16,7 +19,9 @@ class FattoApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:const SplashScreen(),
+      initialRoute: Routes.onBoardingRoute,
+      onGenerateRoute: appRouter.generateRoute,
+      home: const FirstOnBoardingScreen(),
     );
   }
 }

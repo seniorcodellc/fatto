@@ -191,7 +191,7 @@ extension IntNullExtension on int? {
   /// ```dart
   /// 5.hours
   /// ```
-  Duration get hours => Duration(hours: this.validate);
+  Duration get hours => Duration(hours: validate);
 
   /// Returns days duration
   /// ```dart

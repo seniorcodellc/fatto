@@ -2,7 +2,6 @@ import 'package:fatto/config/routes/routes_enums.dart';
 import 'package:fatto/core/extensions.dart';
 
 import '../../exports.dart';
-import '../../splash_screen.dart';
 
 class Routes {
   Routes._internal();
@@ -61,8 +60,8 @@ class RouteGenerator {
   static Route<T>? getRoute<T>(RouteSettings routeSettings) {
     debugPrint(routeSettings.name);
     switch (routeSettings.name) {
-      case Routes.splashRoute:
-        return buildPageRoute<T>(child: const SplashScreen(), routeSettings: routeSettings);
+      // case Routes.splashRoute:
+      //   return buildPageRoute<T>(child: const SplashScreen(), routeSettings: routeSettings);
     }
     return buildPageRoute<T>(
         child: const Center(
@@ -82,7 +81,7 @@ class RouteGenerator {
         settings: routeSettings,
         pageBuilder: (context, a1, a2) => child,
         transitionsBuilder: (c, anim, a2, child) {
-          return RotationTransition(child: child, turns: ReverseAnimation(anim));
+          return RotationTransition(turns: ReverseAnimation(anim), child: child);
         },
         transitionDuration: duration ?? pageRouteTransitionDurationGlobal,
       );
@@ -91,7 +90,7 @@ class RouteGenerator {
         settings: routeSettings,
         pageBuilder: (context, a1, a2) => child,
         transitionsBuilder: (c, anim, a2, child) {
-          return ScaleTransition(child: child, scale: anim);
+          return ScaleTransition(scale: anim, child: child);
         },
         transitionDuration: duration ?? pageRouteTransitionDurationGlobal,
       );
@@ -101,11 +100,11 @@ class RouteGenerator {
         pageBuilder: (context, a1, a2) => child,
         transitionsBuilder: (c, anim, a2, child) {
           return SlideTransition(
-            child: child,
             position: Tween(
               begin: const Offset(1.0, 0.0),
               end: const Offset(0.0, 0.0),
             ).animate(anim),
+            child: child,
           );
         },
         transitionDuration: duration ?? pageRouteTransitionDurationGlobal,
