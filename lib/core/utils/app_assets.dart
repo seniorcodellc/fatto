@@ -3,6 +3,7 @@ mixin PngAssets {
 }
 mixin SvgAssets {
   static const String svgAssets = "assets/icons/";
+
 }
 
 class AppAssets with PngAssets,SvgAssets {
@@ -18,17 +19,17 @@ class AppAssets with PngAssets,SvgAssets {
   static const String wood = "${PngAssets.pngAssets}wood.png";
   static const String bags = "${PngAssets.pngAssets}bags.png";
   static const String promotionBackGround1 = "${PngAssets.pngAssets}Rectangle1.png";
-  static const String promotionFashion = "${PngAssets.pngAssets}1.png";
+  static const String promotionFashion = "${PngAssets.pngAssets}11.png";
   static const String promotionBackGround2 = "${PngAssets.pngAssets}Rectangle2.png";
   static const String promotionBackGround3 = "${PngAssets.pngAssets}Rectangle3.png";
-  static const String promotionMakeup = "${PngAssets.pngAssets}2.png";
+  static const String promotionMakeup = "${PngAssets.pngAssets}22.png";
   static const String hand1 = "${PngAssets.pngAssets}hand1.png";
   static const String hand2 = "${PngAssets.pngAssets}hand2.png";
   static const String hand3 = "${PngAssets.pngAssets}hand3.png";
   static const String hand4 = "${PngAssets.pngAssets}hand4.png";
   static const String promotionBackGround4 = "${PngAssets.pngAssets}Rectangle4.png";
   static const String promotionBackGround5 = "${PngAssets.pngAssets}Rectangle5.png";
-  static const String promotionShoes = "${PngAssets.pngAssets}3.png";
+  static const String promotionShoes = "${PngAssets.pngAssets}33.png";
   static const String pinkBag = "${PngAssets.pngAssets}pinkBag.png";
   static const String brownCandy = "${PngAssets.pngAssets}brownCandy.png";
   static const String offWhite = "${PngAssets.pngAssets}offWhite.png";
@@ -45,9 +46,9 @@ class AppAssets with PngAssets,SvgAssets {
   static const String development = "${PngAssets.pngAssets}development.png";
   static const String graphicDesign = "${PngAssets.pngAssets}graphicDesign.png";
   static const String reviewer = "${PngAssets.pngAssets}feedback.png";
-  static const String item1 = "${PngAssets.pngAssets}1.png";
-  static const String item2 = "${PngAssets.pngAssets}2.png";
-  static const String item3 = "${PngAssets.pngAssets}3.png";
+  static const String item1 = "${PngAssets.pngAssets}11.png";
+  static const String item2 = "${PngAssets.pngAssets}22.png";
+  static const String item3 = "${PngAssets.pngAssets}33.png";
   static const String item4 = "${PngAssets.pngAssets}4.png";
   static const String empty = "${PngAssets.pngAssets}Vector.png";
   static const String favItem1 = "${PngAssets.pngAssets}shawl.png";

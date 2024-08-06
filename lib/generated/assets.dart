@@ -8,9 +8,9 @@ class Assets {
   static const String bagsBrownCandy = 'assets/images/homeScreen/categories/bags/brownCandy.png';
   static const String bagsOffwhite = 'assets/images/homeScreen/categories/bags/offwhite.png';
   static const String bagsPinkBag = 'assets/images/homeScreen/categories/bags/pinkBag.png';
-  static const String cart1 = 'assets/images/homeScreen/cart/1.png';
-  static const String cart2 = 'assets/images/homeScreen/cart/2.png';
-  static const String cart3 = 'assets/images/homeScreen/cart/3.png';
+  static const String cart1 = 'assets/images/homeScreen/cart/11.png';
+  static const String cart2 = 'assets/images/homeScreen/cart/22.png';
+  static const String cart3 = 'assets/images/homeScreen/cart/33.png';
   static const String cart4 = 'assets/images/homeScreen/cart/4.png';
   static const String cartVector = 'assets/images/homeScreen/cart/Vector.png';
   static const String clothesBlouse = 'assets/images/homeScreen/categories/clothes/blouse.png';
@@ -117,9 +117,9 @@ class Assets {
   static const String onboardingScreensOnboarding1 = 'assets/images/onboardingScreens/onboarding1.png';
   static const String onboardingScreensOnboarding2 = 'assets/images/onboardingScreens/onboarding2.png';
   static const String onboardingScreensOnboarding3 = 'assets/images/onboardingScreens/onboarding3.png';
-  static const String promotion1 = 'assets/images/homeScreen/promotion/1.png';
-  static const String promotion2 = 'assets/images/homeScreen/promotion/2.png';
-  static const String promotion3 = 'assets/images/homeScreen/promotion/3.png';
+  static const String promotion1 = 'assets/images/homeScreen/promotion/11.png';
+  static const String promotion2 = 'assets/images/homeScreen/promotion/22.png';
+  static const String promotion3 = 'assets/images/homeScreen/promotion/33.png';
   static const String swDevelopment = 'assets/images/homeScreen/categories/sw/development.png';
   static const String swGraphicDesign = 'assets/images/homeScreen/categories/sw/graphicDesign.png';
   static const String swWebDesign = 'assets/images/homeScreen/categories/sw/webDesign.png';
