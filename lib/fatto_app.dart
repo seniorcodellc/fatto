@@ -1,9 +1,9 @@
 import 'config/routes/app_router.dart';
-import 'config/routes/app_routes.dart';
+import 'config/routes/name_routes.dart';
 import 'exports.dart';
 
 class FattoApp extends StatelessWidget {
-  final FattoRouter appRouter;
+  final AppRouter appRouter;
 
   const FattoApp({super.key, required this.appRouter});
 
