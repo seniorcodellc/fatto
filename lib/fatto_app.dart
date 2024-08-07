@@ -1,3 +1,5 @@
+import 'package:fatto/features/home_section/ui/home_section.dart';
+import 'package:fatto/features/home_section/ui/product35.dart';
 import 'package:fatto/splash_screen.dart';
 
 import 'exports.dart';
@@ -16,7 +18,7 @@ class FattoApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:const SplashScreen(),
+      home:const Product35(),
     );
   }
 }

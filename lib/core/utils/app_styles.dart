@@ -55,8 +55,26 @@ abstract class AppStyles {
     fontFamily: 'Inter',
   );
 
+  static const TextStyle styleInterExtraBold26 = TextStyle(
+    fontSize: 26,
+    fontWeight: FontWeight.w800,
+    fontFamily: 'Inter',
+  );
+
+  static const TextStyle styleInterExtraBold20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w800,
+    fontFamily: 'Inter',
+  );
+
   static const TextStyle styleInterMedium9 = TextStyle(
     fontSize: 9,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Inter',
+  );
+
+  static const TextStyle styleInterMedium15 = TextStyle(
+    fontSize: 15,
     fontWeight: FontWeight.w500,
     fontFamily: 'Inter',
   );
