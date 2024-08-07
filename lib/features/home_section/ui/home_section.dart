@@ -53,22 +53,17 @@ class HomeSection extends StatelessWidget {
                         const CategoriesRow(),
                         36.vs,
                         const Expanded(child: HomeSectionGridView()),
-                      ],
-                    ),
-                  ),
-                  SliverToBoxAdapter(
-                    child: Column(
-                      children: [
+                        8.vs,
                         SvgPicture.asset(AppAssets.moreSquare, height: 24.h),
                         4.vs,
                         Text(
                           'More',
                           style: AppStyles.styleInterRegular9
                               .copyWith(color: AppColors.burntOrange),
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             )));

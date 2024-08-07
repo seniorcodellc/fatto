@@ -15,7 +15,7 @@ class HomeSectionGridView extends StatelessWidget {
           crossAxisCount: 2,
           mainAxisSpacing: 25,
           crossAxisSpacing: 25,
-          mainAxisExtent: 197.11.h
+          mainAxisExtent: 200.h
         ),
         itemBuilder: (context, index) {
           return const HomeSectionProduct();
