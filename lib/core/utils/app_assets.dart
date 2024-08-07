@@ -42,6 +42,7 @@ class AppAssets with PngAssets,SvgAssets {
   static const String potteryClay = "${PngAssets.pngAssets}potteryClay.png";
   static const String cards = "${PngAssets.pngAssets}cards.png";
   static const String cakes = "${PngAssets.pngAssets}cakes.png";
+  static const String cam = "${PngAssets.pngAssets}cam.png";
   static const String eventOrganizing = "${PngAssets.pngAssets}eventOrganizing.png";
   static const String webDesign = "${PngAssets.pngAssets}webDesign.png";
   static const String development = "${PngAssets.pngAssets}development.png";
@@ -53,6 +54,7 @@ class AppAssets with PngAssets,SvgAssets {
   static const String item4 = "${PngAssets.pngAssets}4.png";
   static const String empty = "${PngAssets.pngAssets}Vector.png";
   static const String favItem1 = "${PngAssets.pngAssets}shawl.png";
+
 
   ///Icons svg
   static const String search = "${SvgAssets.svgAssets}search.svg";
