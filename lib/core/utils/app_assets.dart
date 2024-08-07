@@ -14,6 +14,7 @@ class AppAssets with PngAssets,SvgAssets {
   static const String onboarding3 = "${PngAssets.pngAssets}onboarding3.png";
   static const String accountPhoto = "${PngAssets.pngAssets}accountPhoto.png";
   static const String cover = "${PngAssets.pngAssets}cover.png";
+  static const String profileBackGround = "${PngAssets.pngAssets}profile_bc.png";
   static const String decorations = "${PngAssets.pngAssets}decorations.png";
   static const String crochet = "${PngAssets.pngAssets}crochet.png";
   static const String wood = "${PngAssets.pngAssets}wood.png";
@@ -60,6 +61,7 @@ class AppAssets with PngAssets,SvgAssets {
   static const String arrow = "${SvgAssets.svgAssets}arrow.svg";
   static const String bagFill = "${SvgAssets.svgAssets}bag_fill.svg";
   static const String bookmark = "${SvgAssets.svgAssets}bookmark.svg";
+  static const String notification = "${SvgAssets.svgAssets}notification.svg";
   static const String building = "${SvgAssets.svgAssets}building.svg";
   static const String calender = "${SvgAssets.svgAssets}calender.svg";
   static const String cameraFill = "${SvgAssets.svgAssets}camera_fill.svg";

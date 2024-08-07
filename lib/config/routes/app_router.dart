@@ -5,6 +5,7 @@ import 'package:fatto/config/routes/name_routes.dart';
 import 'package:fatto/exports.dart';
 import 'package:fatto/features/Auth/login/presentation/login_screen.dart';
 import 'package:fatto/features/Auth/register/presentation/register_screen.dart';
+import 'package:fatto/features/my_account/presentation/my_account_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -20,6 +21,10 @@ class AppRouter {
         case Routes.registerRoute:
           return MaterialPageRoute(
           builder: (context) => const RegisterScreen(),
+        );
+        case Routes.myAccountRoute:
+          return MaterialPageRoute(
+          builder: (context) => const MyAccountScreen(),
         );
 
       default:

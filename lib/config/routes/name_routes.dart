@@ -27,6 +27,7 @@ class Routes {
   static const String setPassRoute = "set Password";
   static const String homeRoute = "homeScreen";
   static const String reportRoute = "reportScreen";
+  static const String myAccountRoute = "myAccountRoute";
   // static const String faqRoute = "FAQs";
   // static const String faqsDetailsRoute = "faqsDetails";
   // static const String walletRoute = "Wallet";
