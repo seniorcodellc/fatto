@@ -33,7 +33,7 @@ class AppStrings {
   static const String byClickingCreateAccountText =
       'By clicking Create Account, you acknowledge you have read and agreed to our ';
   static const String termsOfUse = 'Terms of Use';
-  static const String and = 'and';
+  static const String and = ' and ';
   static const String privacyPolicy = 'Privacy Policy';
   static const String myAccount = 'My Account';
   static const String general = 'General';

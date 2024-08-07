@@ -3,10 +3,9 @@ mixin PngAssets {
 }
 mixin SvgAssets {
   static const String svgAssets = "assets/icons/";
-
 }
 
-class AppAssets with PngAssets,SvgAssets {
+class AppAssets with PngAssets, SvgAssets {
   ///Image png
   static const String logo = "${PngAssets.pngAssets}logo.png";
   static const String onboarding1 = "${PngAssets.pngAssets}onboarding1.png";
@@ -14,21 +13,30 @@ class AppAssets with PngAssets,SvgAssets {
   static const String onboarding3 = "${PngAssets.pngAssets}onboarding3.png";
   static const String accountPhoto = "${PngAssets.pngAssets}accountPhoto.png";
   static const String cover = "${PngAssets.pngAssets}cover.png";
+  static const String profileBackGround =
+      "${PngAssets.pngAssets}profile_bc.png";
   static const String decorations = "${PngAssets.pngAssets}decorations.png";
   static const String crochet = "${PngAssets.pngAssets}crochet.png";
   static const String wood = "${PngAssets.pngAssets}wood.png";
   static const String bags = "${PngAssets.pngAssets}bags.png";
-  static const String promotionBackGround1 = "${PngAssets.pngAssets}Rectangle1.png";
+  static const String promotionBackGround1 =
+      "${PngAssets.pngAssets}Rectangle1.png";
   static const String promotionFashion = "${PngAssets.pngAssets}11.png";
-  static const String promotionBackGround2 = "${PngAssets.pngAssets}Rectangle2.png";
-  static const String promotionBackGround3 = "${PngAssets.pngAssets}Rectangle3.png";
+  static const String promotionBackGround2 =
+      "${PngAssets.pngAssets}Rectangle2.png";
+  static const String promotionBackGround3 =
+      "${PngAssets.pngAssets}Rectangle3.png";
   static const String promotionMakeup = "${PngAssets.pngAssets}22.png";
   static const String hand1 = "${PngAssets.pngAssets}hand1.png";
   static const String hand2 = "${PngAssets.pngAssets}hand2.png";
   static const String hand3 = "${PngAssets.pngAssets}hand3.png";
   static const String hand4 = "${PngAssets.pngAssets}hand4.png";
-  static const String promotionBackGround4 = "${PngAssets.pngAssets}Rectangle4.png";
-  static const String promotionBackGround5 = "${PngAssets.pngAssets}Rectangle5.png";
+  static const String productBag = "${PngAssets.pngAssets}full_bag.png";
+  static const String promotionBackGround4 =
+      "${PngAssets.pngAssets}Rectangle4.png";
+  static const String promotionBackGround5 =
+      "${PngAssets.pngAssets}Rectangle5.png";
+  static const String bagBrown = '${PngAssets.pngAssets}bag2.png';
   static const String promotionShoes = "${PngAssets.pngAssets}33.png";
   static const String pinkBag = "${PngAssets.pngAssets}pinkBag.png";
   static const String brownCandy = "${PngAssets.pngAssets}brownCandy.png";
@@ -41,7 +49,9 @@ class AppAssets with PngAssets,SvgAssets {
   static const String potteryClay = "${PngAssets.pngAssets}potteryClay.png";
   static const String cards = "${PngAssets.pngAssets}cards.png";
   static const String cakes = "${PngAssets.pngAssets}cakes.png";
-  static const String eventOrganizing = "${PngAssets.pngAssets}eventOrganizing.png";
+  static const String cam = "${PngAssets.pngAssets}cam.png";
+  static const String eventOrganizing =
+      "${PngAssets.pngAssets}eventOrganizing.png";
   static const String webDesign = "${PngAssets.pngAssets}webDesign.png";
   static const String development = "${PngAssets.pngAssets}development.png";
   static const String graphicDesign = "${PngAssets.pngAssets}graphicDesign.png";
@@ -60,8 +70,11 @@ class AppAssets with PngAssets,SvgAssets {
   static const String arrow = "${SvgAssets.svgAssets}arrow.svg";
   static const String bagFill = "${SvgAssets.svgAssets}bag_fill.svg";
   static const String bookmark = "${SvgAssets.svgAssets}bookmark.svg";
+  static const String notification = "${SvgAssets.svgAssets}notification.svg";
   static const String building = "${SvgAssets.svgAssets}building.svg";
   static const String calender = "${SvgAssets.svgAssets}calender.svg";
+  static const String shoppingCart = "${SvgAssets.svgAssets}shopping_bag.svg";
+
   static const String cameraFill = "${SvgAssets.svgAssets}camera_fill.svg";
   static const String cart = "${SvgAssets.svgAssets}cart.svg";
   static const String clock = "${SvgAssets.svgAssets}clock.svg";
@@ -97,4 +110,6 @@ class AppAssets with PngAssets,SvgAssets {
   static const String user = "${SvgAssets.svgAssets}user.svg";
   static const String userIcon = "${SvgAssets.svgAssets}user_icon.svg";
   static const String walletLine = "${SvgAssets.svgAssets}wallet_line.svg";
+
+  static const String back = "${SvgAssets.svgAssets}back_button.svg";
 }

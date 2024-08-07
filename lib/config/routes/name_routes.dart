@@ -1,11 +1,12 @@
 import 'package:fatto/config/routes/routes_enums.dart';
-import 'package:fatto/core/extensions.dart';
-
 import '../../exports.dart';
 
 class Routes {
   Routes._internal();
   static const String onBoardingRoute = "On Boarding Screen";
+  static const String homeSection = "homeSection";
+  static const String product35 = "product35";
+  static const String productScreen = "productScreen";
 
   static const String chatRoute = "Chat route";
   static const String splashRoute = "/";
@@ -22,13 +23,14 @@ class Routes {
   static const String savingTripRoute = "Saving Trip";
   // static const String changePassRoute = "change Pass";
   static const String loginRoute = "login";
-  static const String signUpRoute = "sign Up";
+  static const String registerRoute = "register";
   static const String forgetPassRoute = "forget Password";
   static const String verificationRoute = "verification";
   static const String doneRoute = "verified Route";
   static const String setPassRoute = "set Password";
   static const String homeRoute = "homeScreen";
   static const String reportRoute = "reportScreen";
+  static const String myAccountRoute = "myAccountRoute";
   // static const String faqRoute = "FAQs";
   // static const String faqsDetailsRoute = "faqsDetails";
   // static const String walletRoute = "Wallet";
@@ -81,7 +83,8 @@ class RouteGenerator {
         settings: routeSettings,
         pageBuilder: (context, a1, a2) => child,
         transitionsBuilder: (c, anim, a2, child) {
-          return RotationTransition(turns: ReverseAnimation(anim), child: child);
+          return RotationTransition(
+              turns: ReverseAnimation(anim), child: child);
         },
         transitionDuration: duration ?? pageRouteTransitionDurationGlobal,
       );

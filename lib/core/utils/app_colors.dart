@@ -4,6 +4,7 @@ class AppColors {
   static const Color white = Color(0xFFFFFFFF);
   static const Color transparent = Colors.transparent;
   static const Color black = Color(0xFF000000);
+  static const Color darkGreen = Color(0xFF156651);
   static const Color primaryColor = Color(0xFFBD6633);
   static const Color charcoal = Color(0xFF161616);
   static const Color slateGray = Color(0xFF777777);
@@ -71,4 +72,6 @@ class AppColors {
   static const Color darkCharcoal = Color(0xFF474747);
   static const Color lightBlue3 = Color(0xFFDFE9FF);
   static const Color dimGray = Color(0xFF666666);
+  static const Color searchColor = Color(0xffC0C0C0);
+  static const Color product35ColorColor = Color(0xffF9F9F9);
 }

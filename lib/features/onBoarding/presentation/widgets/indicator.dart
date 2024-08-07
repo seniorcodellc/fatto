@@ -1,3 +1,4 @@
+import '../../../../core/utils/size_utils.dart';
 import '../../../../exports.dart';
 
 class Indicator extends StatelessWidget {

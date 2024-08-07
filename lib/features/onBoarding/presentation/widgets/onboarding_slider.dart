@@ -1,3 +1,8 @@
+
+
+
+
+import '../../../../core/utils/size_utils.dart';
 import '../../../../exports.dart';
 import '../../data/onboarding_model.dart';
 

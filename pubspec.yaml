@@ -28,21 +28,27 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  cupertino_icons: ^1.0.8
-  dartz: null
-  dio: null
-  easy_localization: null
   flutter:
     sdk: flutter
-  flutter_bloc: null
-  flutter_launcher_icons: null
-  flutter_local_notifications: null
-  flutter_native_splash: null
-  flutter_svg: null
-  inspection: null
-  introduction_screen: ^3.1.14
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  easy_localization:
+  flutter_svg:
+  flutter_native_splash:
+  flutter_launcher_icons:
+  flutter_bloc:
+  flutter_local_notifications:
+  dartz:
+  dio:
+  inspection:
+  smooth_page_indicator: ^1.2.0+3
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -50,11 +56,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
-  flutter_test:
-    sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -69,8 +74,12 @@ flutter:
     - assets/images/
     - assets/icons/
 
+
+
+
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
+
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
@@ -79,27 +88,27 @@ flutter:
   fonts:
     - family: Inter
       fonts:
-        - asset: assets/fonts/Inter-Light.ttf
+        - asset:  assets/fonts/Inter-Light.ttf
           weight: 300
-        - asset: assets/fonts/Inter-Regular.ttf
+        - asset:  assets/fonts/Inter-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Inter-Bold.ttf
+        - asset:  assets/fonts/Inter-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Inter-ExtraBold.ttf
+        - asset:  assets/fonts/Inter-ExtraBold.ttf
           weight: 800
-        - asset: assets/fonts/Inter-Medium.ttf
+        - asset:  assets/fonts/Inter-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Inter-SemiBold.ttf
+        - asset:  assets/fonts/Inter-SemiBold.ttf
           weight: 600
     - family: Poppins
       fonts:
-        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset:  assets/fonts/Poppins-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset:  assets/fonts/Poppins-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset:  assets/fonts/Poppins-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Poppins-SemiBold.ttf
+        - asset:  assets/fonts/Poppins-SemiBold.ttf
           weight: 600
     - family: Almarai
       fonts:
@@ -107,11 +116,11 @@ flutter:
           weight: 300
         - asset: assets/fonts/Almarai-Regular.ttf
           weight: 400
-
+        
         - asset: assets/fonts/Almarai-Bold.ttf
           weight: 700
         - asset: assets/fonts/Almarai-ExtraBold.ttf
-          weight: 800
+          weight: 800    
     - family: NunitoSans
       fonts:
         - asset: assets/fonts/NunitoSans-Light.ttf
@@ -123,7 +132,7 @@ flutter:
         - asset: assets/fonts/NunitoSans-Bold.ttf
           weight: 700
         - asset: assets/fonts/NunitoSans-ExtraBold.ttf
-          weight: 800
+          weight: 800          
     - family: InterDisplay
       fonts:
         - asset: assets/fonts/InterDisplay-Light.ttf
@@ -135,7 +144,7 @@ flutter:
         - asset: assets/fonts/InterDisplay-Bold.ttf
           weight: 700
         - asset: assets/fonts/InterDisplay-ExtraBold.ttf
-          weight: 800
+          weight: 800   
     - family: Manrope
       fonts:
         - asset: assets/fonts/Manrope-Regular.otf
@@ -147,7 +156,7 @@ flutter:
         - asset: assets/fonts/Manrope-Bold.otf
           weight: 700
         - asset: assets/fonts/Manrope-ExtraBold.otf
-          weight: 800
+          weight: 800    
     - family: Raleway
       fonts:
         - asset: assets/fonts/Raleway-Regular.ttf
@@ -159,7 +168,7 @@ flutter:
         - asset: assets/fonts/Raleway-Bold.ttf
           weight: 700
         - asset: assets/fonts/Raleway-ExtraBold.ttf
-          weight: 800
+          weight: 800        
     - family: SFProDisplay
       fonts:
         - asset: assets/fonts/SFPRODISPLAY-REGULAR.OTF
@@ -167,6 +176,15 @@ flutter:
         - asset: assets/fonts/SFPRODISPLAY-MEDIUM.OTF
           weight: 500
         - asset: assets/fonts/SFPRODISPLAY-BOLD.OTF
-          weight: 700
+          weight: 700        
+
+
+          
+
+
+        
+          
+    
+  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

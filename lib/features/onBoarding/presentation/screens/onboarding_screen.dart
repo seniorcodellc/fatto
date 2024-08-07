@@ -1,3 +1,4 @@
+import '../../../../core/utils/size_utils.dart';
 import '../../../../exports.dart';
 import '../../data/onboarding_model.dart';
 import '../widgets/onboarding_slider.dart';
@@ -56,7 +57,8 @@ class OnboardingScreen extends StatelessWidget {
                           TextButton(
                             onPressed: () {
                               // Navigate to the last onboarding screen
-                              OnBoardingSlider.pageController.jumpToPage(imagePathList.length - 1);
+                              OnBoardingSlider.pageController
+                                  .jumpToPage(imagePathList.length - 1);
                             },
                             child: Text(
                               AppStrings.skip,
@@ -66,10 +68,8 @@ class OnboardingScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      FattoTextButton(
-                        buttonText: 'Next',
-                        textStyle: AppStyles.styleInterSemiBold16
-                            .copyWith(color: AppColors.white),
+                      CustomButton(
+                        text: 'Next',
                         onPressed: () {
                           // Navigate to the next onboarding screen
                           OnBoardingSlider.pageController.nextPage(
@@ -88,43 +88,40 @@ class OnboardingScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Flexible(
-                                child: FattoTextButton(
+                                child: CustomButton(
                                     backgroundColor: AppColors.transparent,
                                     borderRadius: 8,
-                                    buttonHeight: getVerticalSize(
+                                    height: getVerticalSize(
                                         50), // Responsive height
-                                    buttonWidth: getHorizontalSize(
+                                    width: getHorizontalSize(
                                         104), // Responsive width
-                                    buttonText: 'Back',
-                                    textStyle:
-                                        AppStyles.styleInterSemiBold16.copyWith(
-                                      color: AppColors.primaryColor,
-                                    ),
+                                    text: 'Back',
+                                    textColor: AppColors.primaryColor,
                                     onPressed: () {
                                       // Navigate to the previous onboarding screen
-                                      OnBoardingSlider.pageController.previousPage(
-                                        duration: const Duration(milliseconds: 300),
+                                      OnBoardingSlider.pageController
+                                          .previousPage(
+                                        duration:
+                                            const Duration(milliseconds: 300),
                                         curve: Curves.easeIn,
                                       );
                                     }),
                               ),
                               Flexible(
-                                child: FattoTextButton(
+                                child: CustomButton(
                                   borderRadius: 8,
-                                  buttonHeight:
+                                  height:
                                       getVerticalSize(50), // Responsive height
-                                  buttonWidth: getHorizontalSize(
+                                  width: getHorizontalSize(
                                     223,
                                   ), // Responsive width
-                                  buttonText: 'Next',
-                                  textStyle:
-                                      AppStyles.styleInterSemiBold16.copyWith(
-                                    color: AppColors.white,
-                                  ),
+                                  text: 'Next',
+
                                   onPressed: () {
                                     // Navigate to the next onboarding screen
                                     OnBoardingSlider.pageController.nextPage(
-                                      duration: const Duration(milliseconds: 300),
+                                      duration:
+                                          const Duration(milliseconds: 300),
                                       curve: Curves.easeIn,
                                     );
                                   },
