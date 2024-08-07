@@ -1,6 +1,4 @@
 import 'package:fatto/config/routes/routes_enums.dart';
-import 'package:fatto/core/extensions.dart';
-
 import '../../exports.dart';
 
 class Routes {

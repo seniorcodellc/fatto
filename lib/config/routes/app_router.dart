@@ -1,8 +1,9 @@
 
 
 
-import 'package:fatto/config/routes/app_routes.dart';
+import 'package:fatto/config/routes/name_routes.dart';
 import 'package:fatto/exports.dart';
+import 'package:fatto/features/Auth/login/presentation/login_screen.dart';
 
 class FattoRouter {
   Route generateRoute(RouteSettings settings) {
@@ -10,6 +11,10 @@ class FattoRouter {
       case Routes.onBoardingRoute:
         return MaterialPageRoute(
           builder: (context) => const FirstOnBoardingScreen(),
+        );
+        case Routes.loginRoute:
+        return MaterialPageRoute(
+          builder: (context) => const LoginScreen(),
         );
 
       default:
