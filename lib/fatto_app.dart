@@ -25,7 +25,7 @@ class FattoApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        initialRoute: Routes.product35,
+        initialRoute: Routes.registerRoute,
         onGenerateRoute: appRouter.generateRoute,
         home: const Product35(),
       ),
