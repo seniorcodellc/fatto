@@ -20,7 +20,7 @@ class Routes {
   static const String savingTripRoute = "Saving Trip";
   // static const String changePassRoute = "change Pass";
   static const String loginRoute = "login";
-  static const String signUpRoute = "sign Up";
+  static const String registerRoute = "register";
   static const String forgetPassRoute = "forget Password";
   static const String verificationRoute = "verification";
   static const String doneRoute = "verified Route";

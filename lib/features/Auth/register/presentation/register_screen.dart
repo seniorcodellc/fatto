@@ -1,23 +1,23 @@
 import 'package:fatto/exports.dart';
-import 'package:fatto/features/Auth/login/presentation/logic/login_cubit.dart';
-import 'package:fatto/features/Auth/login/presentation/logic/login_state.dart';
-import 'package:fatto/features/Auth/login/presentation/widget/login_section.dart';
-import 'package:fatto/features/Auth/login/presentation/widget/social_login_section.dart';
-import 'package:fatto/features/Auth/login/presentation/widget/welcome_section.dart';
+import 'package:fatto/features/Auth/register/presentation/logic/register_cubit.dart';
+import 'package:fatto/features/Auth/register/presentation/logic/register_state.dart';
+import 'package:fatto/features/Auth/register/presentation/widget/create_account_section.dart';
+import 'package:fatto/features/Auth/register/presentation/widget/register_section.dart';
+import 'package:fatto/features/Auth/register/presentation/widget/social_register_section.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatelessWidget {
+  const RegisterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => LoginCubit(),
-      child: BlocConsumer<LoginCubit, LoginState>(
+      create: (context) => RegisterCubit(),
+      child: BlocConsumer<RegisterCubit, RegisterState>(
         listener: (context, state) {
         },
         builder: (context, state) {
-          var loginCubit = LoginCubit.get(context);
+          var registerCubit = RegisterCubit.get(context);
           return Scaffold(
             body: SingleChildScrollView(
               child: Column(
@@ -29,9 +29,9 @@ class LoginScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const WelcomeSection(),
+                        const CreateAccountSection(),
                         32.vs,
-                        LoginSection(loginCubit: loginCubit,),
+                        RegisterSection(registerCubit: registerCubit,),
                         32.vs,
                         Row(
                           children: [
@@ -58,27 +58,7 @@ class LoginScreen extends StatelessWidget {
                           ],
                         ),
                         32.vs,
-                        SocialLoginSection(googleFunction: () {  }, facebookFunction: () {  },),
-                        32.vs,
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              AppStrings.dontHaveAnAccount,
-                              style: AppStyles.styleInterRegular16.copyWith(
-                                  color: AppColors.darkSlateGray),
-                            ),
-                            GestureDetector(
-                              onTap: (){},
-                              child: Text(
-                                AppStrings.register,
-                                style: AppStyles.styleInterRegular16.copyWith(
-                                    color: AppColors.primaryColor),
-                              ),
-                            ),
-              
-                          ],
-                        )
+                        SocialRegisterSection(googleFunction: () {  }, facebookFunction: () {  },),
                       ],
                     ),
                   )
