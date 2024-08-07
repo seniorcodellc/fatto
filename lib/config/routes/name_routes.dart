@@ -4,6 +4,8 @@ import '../../exports.dart';
 class Routes {
   Routes._internal();
   static const String onBoardingRoute = "On Boarding Screen";
+  static const String homeSection = "homeSection";
+  static const String product35 = "product35";
 
   static const String chatRoute = "Chat route";
   static const String splashRoute = "/";
@@ -79,7 +81,8 @@ class RouteGenerator {
         settings: routeSettings,
         pageBuilder: (context, a1, a2) => child,
         transitionsBuilder: (c, anim, a2, child) {
-          return RotationTransition(turns: ReverseAnimation(anim), child: child);
+          return RotationTransition(
+              turns: ReverseAnimation(anim), child: child);
         },
         transitionDuration: duration ?? pageRouteTransitionDurationGlobal,
       );

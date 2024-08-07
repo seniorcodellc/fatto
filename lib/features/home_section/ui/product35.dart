@@ -1,9 +1,5 @@
-import 'package:fatto/core/extensions.dart';
-import 'package:fatto/core/utils/app_styles.dart';
 import 'package:fatto/exports.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
 import 'widgets/color_card.dart';
 
 class Product35 extends StatelessWidget {
@@ -44,9 +40,7 @@ class Product35 extends StatelessWidget {
             ),
             16.vs,
             Padding(
-              padding: EdgeInsets.fromLTRB(
-                 20.w,0,20.w,20.h
-              ),
+              padding: EdgeInsets.fromLTRB(20.w, 0, 20.w, 20.h),
               child: Column(
                 children: [
                   Row(
@@ -102,24 +96,53 @@ class Product35 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      ClipRRect(borderRadius: BorderRadius.circular(8),child: Image.asset(AppAssets.cam,height: 86.h,width: 81.w,fit: BoxFit.cover,)),
-                      ClipRRect(borderRadius: BorderRadius.circular(8),child: Image.asset(AppAssets.cam,height: 86.h,width: 81.w,fit: BoxFit.cover,)),
-                      ClipRRect(borderRadius: BorderRadius.circular(8),child: Image.asset(AppAssets.cam,height: 86.h,width: 81.w,fit: BoxFit.cover,)),
+                      ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(
+                            AppAssets.cam,
+                            height: 86.h,
+                            width: 81.w,
+                            fit: BoxFit.cover,
+                          )),
+                      ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(
+                            AppAssets.cam,
+                            height: 86.h,
+                            width: 81.w,
+                            fit: BoxFit.cover,
+                          )),
+                      ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.asset(
+                            AppAssets.cam,
+                            height: 86.h,
+                            width: 81.w,
+                            fit: BoxFit.cover,
+                          )),
                     ],
                   ),
                   25.vs,
-                  Row(children: [
-                     Container(
-        height: 40.h,
-        width: 47.w,
-        color: AppColors.product35ColorColor,
-        child: Center(
-          child:SvgPicture.asset(AppAssets.heart)
-        ),
-      ),
-      24.hs,
-      
-                  ],)
+                  Row(
+                    children: [
+                      Container(
+                        height: 40.h,
+                        width: 47.w,
+                        decoration: BoxDecoration(
+                            color: AppColors.product35ColorColor,
+                            borderRadius: BorderRadius.circular(15)),
+                        child: Center(
+                            child: SvgPicture.asset(
+                          AppAssets.heart,
+                          height: 30.h,
+                        )),
+                      ),
+                      24.hs,
+                      Expanded(
+                          child:
+                              CustomButton(text: 'Buy now', onPressed: () {}))
+                    ],
+                  )
                 ],
               ),
             ),

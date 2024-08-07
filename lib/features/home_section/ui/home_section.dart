@@ -1,9 +1,6 @@
-import 'package:fatto/core/extensions.dart';
-import 'package:fatto/core/utils/app_styles.dart';
 import 'package:fatto/exports.dart';
 import 'package:fatto/features/home_section/ui/widgets/categories_row.dart';
 import 'package:fatto/features/home_section/ui/widgets/time_row.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'widgets/home_section_grid_view.dart';
 import 'widgets/search_text_field.dart';
 

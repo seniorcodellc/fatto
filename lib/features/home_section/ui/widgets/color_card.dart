@@ -1,6 +1,3 @@
-
-import 'package:fatto/core/extensions.dart';
-import 'package:fatto/core/utils/app_styles.dart';
 import 'package:fatto/exports.dart';
 
 class ColorCard extends StatelessWidget {

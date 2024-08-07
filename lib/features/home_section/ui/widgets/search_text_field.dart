@@ -1,7 +1,4 @@
-import 'package:fatto/core/extensions.dart';
 import 'package:fatto/exports.dart';
-
-import '../../../../core/utils/app_styles.dart';
 
 class SearchTextField extends StatelessWidget {
   const SearchTextField({
