@@ -22,7 +22,7 @@ class GeneralAccountData extends StatelessWidget {
                   selectionName,
                   style: AppStyles.styleInterSemiBold16.copyWith(color: AppColors.graphite),
                 ),
-                Spacer(),
+                const Spacer(),
                 Text(
                   'English (US)',
                   style: AppStyles.styleInterSemiBold16.copyWith(color: AppColors.graphite),

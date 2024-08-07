@@ -48,9 +48,7 @@ class OnboardingScreen extends StatelessWidget {
                 padding: getPadding(horizontal: 16), // Responsive padding
                 child: Column(
                   children: [
-                    SizedBox(
-                        height:
-                            getVerticalSize(20)), // Responsive vertical space
+                   20.vs, // Responsive vertical space
                     if (value == 0) ...[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -79,24 +77,19 @@ class OnboardingScreen extends StatelessWidget {
                           );
                         },
                       ),
-                      SizedBox(
-                          height:
-                              getVerticalSize(16)), // Responsive vertical space
+                      16.vs, // Responsive vertical space
                     ] else if (value == 1 || value == 2) ...[
                       Column(
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Flexible(
+                              Expanded(
+                                flex: 1,
                                 child: CustomButton(
                                     backgroundColor: AppColors.transparent,
-                                    borderRadius: 8,
-                                    height: getVerticalSize(
-                                        50), // Responsive height
-                                    width: getHorizontalSize(
-                                        104), // Responsive width
                                     text: 'Back',
+                                    borderColor:AppColors.transparent,
                                     textColor: AppColors.primaryColor,
                                     onPressed: () {
                                       // Navigate to the previous onboarding screen
@@ -108,14 +101,10 @@ class OnboardingScreen extends StatelessWidget {
                                       );
                                     }),
                               ),
-                              Flexible(
+                              Expanded(
+                                flex: 2,
                                 child: CustomButton(
-                                  borderRadius: 8,
-                                  height:
-                                      getVerticalSize(50), // Responsive height
-                                  width: getHorizontalSize(
-                                    223,
-                                  ), // Responsive width
+                                  borderRadius: 8.r,
                                   text: 'Next',
 
                                   onPressed: () {

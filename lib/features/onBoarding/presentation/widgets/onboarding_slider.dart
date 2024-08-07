@@ -2,6 +2,8 @@
 
 
 
+import 'package:fatto/features/onBoarding/presentation/widgets/indicator.dart';
+
 import '../../../../core/utils/size_utils.dart';
 import '../../../../exports.dart';
 import '../../data/onboarding_model.dart';
@@ -73,7 +75,7 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
                                     .entries
                                     .map((entry) {
                                   int index = entry.key;
-                                  return buildIndicator(index == value);
+                                  return Indicator(isActive:index == value,);
                                 }).toList(),
                               ),
                           ],
@@ -90,16 +92,5 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
     );
   }
 
-  Widget buildIndicator(bool isActive) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 158),
-      margin: EdgeInsets.symmetric(horizontal: getHorizontalSize(6)),
-      height: getVerticalSize(8),
-      width: isActive ? getHorizontalSize(12) : getHorizontalSize(8),
-      decoration: BoxDecoration(
-        color: isActive ? AppColors.primaryColor : Colors.grey,
-        borderRadius: BorderRadius.circular(4),
-      ),
-    );
-  }
+
 }

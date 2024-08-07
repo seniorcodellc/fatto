@@ -1,7 +1,6 @@
 import 'package:fatto/exports.dart';
 import 'package:fatto/features/my_account/presentation/widget/general_account_data.dart';
 import 'package:fatto/features/my_account/presentation/widget/header_profile_section.dart';
-import 'package:flutter/services.dart';
 
 
 class MyAccountScreen extends StatelessWidget {

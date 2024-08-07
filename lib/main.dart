@@ -1,4 +1,3 @@
-import 'config/routes/app_router.dart';
 import 'exports.dart';
 import 'fatto_app.dart';
 
