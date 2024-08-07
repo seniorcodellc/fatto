@@ -5,6 +5,8 @@ import 'package:fatto/config/routes/name_routes.dart';
 import 'package:fatto/exports.dart';
 import 'package:fatto/features/Auth/login/presentation/login_screen.dart';
 import 'package:fatto/features/Auth/register/presentation/register_screen.dart';
+import 'package:fatto/features/home_section/ui/home_section.dart';
+import 'package:fatto/features/home_section/ui/product35.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -20,6 +22,14 @@ class AppRouter {
         case Routes.registerRoute:
           return MaterialPageRoute(
           builder: (context) => const RegisterScreen(),
+        );
+        case Routes.homeSection:
+          return MaterialPageRoute(
+          builder: (context) => const HomeSection(),
+        );
+        case Routes.product35:
+          return MaterialPageRoute(
+          builder: (context) => const Product35(),
         );
 
       default:
