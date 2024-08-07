@@ -1,4 +1,3 @@
-import 'package:fatto/features/home_section/ui/product35.dart';
 import 'package:flutter/services.dart';
 import 'config/routes/app_router.dart';
 import 'config/routes/name_routes.dart';
@@ -26,9 +25,9 @@ class FattoApp extends StatelessWidget {
           scaffoldBackgroundColor: AppColors.white,
           useMaterial3: true,
         ),
-        initialRoute: Routes.product35,
+        initialRoute: Routes.onBoardingRoute,
         onGenerateRoute: appRouter.generateRoute,
-        home: const Product35(),
+        home: const FirstOnBoardingScreen(),
       ),
     );
   }

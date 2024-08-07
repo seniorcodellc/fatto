@@ -1,3 +1,5 @@
+import 'package:fatto/config/routes/app_routes_helper.dart';
+import 'package:fatto/config/routes/name_routes.dart';
 import 'package:fatto/core/widgets/custom_text_form_field.dart';
 import 'package:fatto/features/Auth/register/presentation/logic/register_cubit.dart';
 import 'package:flutter/gestures.dart';
@@ -104,7 +106,9 @@ class RegisterSection extends StatelessWidget {
           24.vs,
           CustomButton(
             text: AppStrings.createAccount,
-            onPressed: () {  },
+            onPressed: () {
+              push( context: context, route: Routes.homeSection);
+            },
           ),
         ],
       ),

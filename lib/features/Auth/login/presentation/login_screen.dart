@@ -1,3 +1,5 @@
+import 'package:fatto/config/routes/app_routes_helper.dart';
+import 'package:fatto/config/routes/name_routes.dart';
 import 'package:fatto/exports.dart';
 import 'package:fatto/features/Auth/login/presentation/logic/login_cubit.dart';
 import 'package:fatto/features/Auth/login/presentation/logic/login_state.dart';
@@ -69,7 +71,9 @@ class LoginScreen extends StatelessWidget {
                                   color: AppColors.darkSlateGray),
                             ),
                             GestureDetector(
-                              onTap: (){},
+                              onTap: (){
+                                push( context: context, route: Routes.registerRoute);
+                              },
                               child: Text(
                                 AppStrings.register,
                                 style: AppStyles.styleInterRegular16.copyWith(

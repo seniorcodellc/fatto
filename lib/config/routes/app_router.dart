@@ -26,7 +26,8 @@ class AppRouter {
         );
         case Routes.myAccountRoute:
           return MaterialPageRoute(
-          builder: (context) => const MyAccountScreen(),
+          builder: (context) => const MyAccountScreen()
+          );
         case Routes.homeSection:
           return MaterialPageRoute(
           builder: (context) => const HomeSection(),
