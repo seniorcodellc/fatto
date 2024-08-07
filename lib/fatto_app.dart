@@ -14,7 +14,8 @@ class FattoApp extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent, // Set the status bar color
-        statusBarIconBrightness: Brightness.dark, // Set the status bar icon color to light
+        statusBarIconBrightness:
+            Brightness.dark, // Set the status bar icon color to light
       ),
       child: MaterialApp(
         title: AppStrings.appName,

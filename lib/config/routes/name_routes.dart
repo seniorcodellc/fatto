@@ -6,6 +6,7 @@ class Routes {
   static const String onBoardingRoute = "On Boarding Screen";
   static const String homeSection = "homeSection";
   static const String product35 = "product35";
+  static const String productScreen = "productScreen";
 
   static const String chatRoute = "Chat route";
   static const String splashRoute = "/";
