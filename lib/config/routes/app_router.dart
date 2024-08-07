@@ -1,6 +1,3 @@
-
-
-
 import 'package:fatto/config/routes/app_routes.dart';
 import 'package:fatto/exports.dart';
 
@@ -9,7 +6,7 @@ class FattoRouter {
     switch (settings.name) {
       case Routes.onBoardingRoute:
         return MaterialPageRoute(
-          builder: (context) => const FirstOnBoardingScreen(),
+          builder: (context) =>  OnboardingScreen(),
         );
 
       default:

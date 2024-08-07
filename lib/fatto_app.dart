@@ -20,7 +20,7 @@ class FattoApp extends StatelessWidget {
       ),
       initialRoute: Routes.onBoardingRoute,
       onGenerateRoute: appRouter.generateRoute,
-      home: const FirstOnBoardingScreen(),
+      home:  OnboardingScreen(),
     );
   }
 }
