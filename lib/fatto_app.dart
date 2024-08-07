@@ -1,4 +1,3 @@
-import 'package:fatto/features/home_section/ui/product35.dart';
 import 'package:flutter/services.dart';
 import 'config/routes/app_router.dart';
 import 'config/routes/name_routes.dart';
@@ -15,7 +14,8 @@ class FattoApp extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent, // Set the status bar color
-        statusBarIconBrightness: Brightness.dark, // Set the status bar icon color to light
+        statusBarIconBrightness:
+            Brightness.dark, // Set the status bar icon color to light
       ),
       child: MaterialApp(
         title: AppStrings.appName,
@@ -23,11 +23,12 @@ class FattoApp extends StatelessWidget {
         color: AppColors.primaryColor,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          scaffoldBackgroundColor: AppColors.white,
           useMaterial3: true,
         ),
-        initialRoute: Routes.registerRoute,
+        initialRoute: Routes.onBoardingRoute,
         onGenerateRoute: appRouter.generateRoute,
-        home: const Product35(),
+        home: const FirstOnBoardingScreen(),
       ),
     );
   }

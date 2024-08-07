@@ -1,7 +1,16 @@
 import 'package:fatto/exports.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.text, this.borderRadius, required this.onPressed, this.textColor, this.borderColor, this.backgroundColor, this.svgIconPath});
+  const CustomButton(
+      {super.key,
+      required this.text,
+      this.borderRadius,
+      required this.onPressed,
+      this.textColor,
+      this.borderColor,
+      this.backgroundColor,
+      this.svgIconPath,
+      this.width, this.height});
   final String text;
   final double? borderRadius;
   final String? svgIconPath;
@@ -9,31 +18,37 @@ class CustomButton extends StatelessWidget {
   final Color? textColor;
   final Color? borderColor;
   final Color? backgroundColor;
+  final double? width;
+  final double? height;
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-        height: 55.h,
-        minWidth: MediaQuery.sizeOf(context).width * 0.9,
-        color:backgroundColor ?? AppColors.primaryColor,
+        height:height ?? 55.h,
+        minWidth: width ?? MediaQuery.sizeOf(context).width * 0.9,
+        color: backgroundColor ?? AppColors.primaryColor,
         elevation: 0,
         onPressed: onPressed,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius ??12.r),
-          side: BorderSide(color: borderColor ?? AppColors.primaryColor)
-        ),
+            borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
+            side: BorderSide(color: borderColor ?? AppColors.primaryColor)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            svgIconPath != null ? SvgPicture.asset(svgIconPath!,width: 20.w,height: 20.w,) : 0.hs,
+            svgIconPath != null
+                ? SvgPicture.asset(
+                    svgIconPath!,
+                    width: 20.w,
+                    height: 20.w,
+                  )
+                : 0.hs,
             svgIconPath != null ? 14.hs : 0.hs,
             Text(
               text,
-              style:AppStyles.styleInterBold16.copyWith(color:textColor?? AppColors.white),
+              style: AppStyles.styleInterBold16
+                  .copyWith(color: textColor ?? AppColors.white),
             ),
           ],
-        )
-
-    );
+        ));
   }
   // @override
   // Widget build(BuildContext context) {
