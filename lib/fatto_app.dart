@@ -23,6 +23,7 @@ class FattoApp extends StatelessWidget {
         color: AppColors.primaryColor,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          scaffoldBackgroundColor: AppColors.white,
           useMaterial3: true,
         ),
         initialRoute: Routes.product35,
