@@ -24,7 +24,7 @@ class RegisterSection extends StatelessWidget {
               }
               return null;
             },
-            prefixSvgIcon: SvgPicture.asset(AppAssets.user),
+            prefixSvgIcon: SvgPicture.asset(AppAssets.userIcon),
             radiusOfContainer: 12.r,),
           16.vs,
           CustomTextFormField(
@@ -38,7 +38,7 @@ class RegisterSection extends StatelessWidget {
               }
               return null;
             },
-            prefixSvgIcon: SvgPicture.asset(AppAssets.user),
+            prefixSvgIcon: SvgPicture.asset(AppAssets.userIcon),
             radiusOfContainer: 12.r,),
           16.vs,
           CustomTextFormField(
