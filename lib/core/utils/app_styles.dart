@@ -18,6 +18,16 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
     fontFamily: 'Inter',
   );
+  static const TextStyle styleInterRegular1 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Inter',
+  );
+  static const TextStyle styleInterExtraBold32 = TextStyle(
+    fontSize: 32,
+    fontWeight: FontWeight.w800,
+    fontFamily: 'Inter',
+  );
 
   static const TextStyle styleInterRegular22_5 = TextStyle(
     fontSize: 22.5,
@@ -230,6 +240,10 @@ abstract class AppStyles {
   );
 
   static const TextStyle styleManropeRegular16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Manrope',
+  );static const TextStyle styleManropeRegular12 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     fontFamily: 'Manrope',

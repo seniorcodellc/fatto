@@ -39,11 +39,7 @@ static final imagePathList = <String> [
             ),
             Column(
               children: [
-                FattoTextButton(
-                  buttonText: 'Next',
-                  textStyle: AppStyles.styleInterBold14,
-                  onPressed: () {},
-                ),
+
               ],
             )
           ],

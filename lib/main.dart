@@ -5,7 +5,7 @@ import 'fatto_app.dart';
 void main() {
   runApp(
     FattoApp(
-      appRouter: FattoRouter(),
+      appRouter: AppRouter(),
     ),
   );
 }
