@@ -272,4 +272,5 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
     fontFamily: 'SF Pro Display',
   );
+  
 }

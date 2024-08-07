@@ -1,3 +1,4 @@
+
 import 'package:fatto/config/routes/name_routes.dart';
 import 'package:fatto/exports.dart';
 import 'package:fatto/features/Auth/login/presentation/login_screen.dart';
@@ -12,7 +13,7 @@ class AppRouter {
     switch (settings.name) {
       case Routes.onBoardingRoute:
         return MaterialPageRoute(
-          builder: (context) => const FirstOnBoardingScreen(),
+          builder: (context) =>  OnboardingScreen(),
         );
       case Routes.loginRoute:
         return MaterialPageRoute(

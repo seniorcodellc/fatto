@@ -1,6 +1,5 @@
-import 'package:flutter/services.dart';
-import 'config/routes/app_router.dart';
-import 'config/routes/name_routes.dart';
+
+
 import 'exports.dart';
 
 class FattoApp extends StatelessWidget {
@@ -26,10 +25,11 @@ class FattoApp extends StatelessWidget {
           scaffoldBackgroundColor: AppColors.white,
           useMaterial3: true,
         ),
-        initialRoute: Routes.onBoardingRoute,
-        onGenerateRoute: appRouter.generateRoute,
-        home: const FirstOnBoardingScreen(),
-      ),
+    
+      initialRoute: Routes.onBoardingRoute,
+      onGenerateRoute: appRouter.generateRoute,
+      home:  const OnboardingScreen(),
+      )
     );
   }
 }
