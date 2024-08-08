@@ -1,4 +1,3 @@
-import 'package:fatto/features/product/presentation/screens/product_screen.dart';
 
 
 import 'exports.dart';
