@@ -152,14 +152,14 @@ class OnboardingScreen extends StatelessWidget {
                                   borderRadius: 8.r,
                                   text: 'Next',
                                   onPressed: () {
-                                    OnBoardingSlider.pageController.nextPage(
-                                      duration:
-                                          const Duration(milliseconds: 300),
-                                      curve: Curves.easeIn,
-                                    );
-                                    // push(
-                                    //     context: context,
-                                    //     route: Routes.loginRoute);
+                                    // OnBoardingSlider.pageController.nextPage(
+                                    //   duration:
+                                    //       const Duration(milliseconds: 300),
+                                    //   curve: Curves.easeIn,
+                                    // );
+                                    push(
+                                        context: context,
+                                        route: Routes.loginRoute);
                                   },
                                 ),
                               ),
