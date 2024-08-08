@@ -48,7 +48,7 @@ class OnboardingScreen extends StatelessWidget {
                 padding: getPadding(horizontal: 16), // Responsive padding
                 child: Column(
                   children: [
-                   20.vs, // Responsive vertical space
+                    20.vs, // Responsive vertical space
                     if (value == 0) ...[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -78,7 +78,7 @@ class OnboardingScreen extends StatelessWidget {
                         },
                       ),
                       16.vs, // Responsive vertical space
-                    ] else if (value == 1 || value == 2) ...[
+                    ] else if (value == 1) ...[
                       Column(
                         children: [
                           Row(
@@ -89,7 +89,7 @@ class OnboardingScreen extends StatelessWidget {
                                 child: CustomButton(
                                     backgroundColor: AppColors.transparent,
                                     text: 'Back',
-                                    borderColor:AppColors.transparent,
+                                    borderColor: AppColors.transparent,
                                     textColor: AppColors.primaryColor,
                                     onPressed: () {
                                       // Navigate to the previous onboarding screen
@@ -106,15 +106,60 @@ class OnboardingScreen extends StatelessWidget {
                                 child: CustomButton(
                                   borderRadius: 8.r,
                                   text: 'Next',
-
                                   onPressed: () {
                                     // Navigate to the next onboarding screen
-                                    // OnBoardingSlider.pageController.nextPage(
-                                    //   duration:
-                                    //       const Duration(milliseconds: 300),
-                                    //   curve: Curves.easeIn,
-                                    // );
-                                    push(context:context, route: Routes.loginRoute);
+                                    OnBoardingSlider.pageController.nextPage(
+                                      duration:
+                                          const Duration(milliseconds: 300),
+                                      curve: Curves.easeIn,
+                                    );
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: getVerticalSize(20),
+                          ), // Responsive vertical space
+                        ],
+                      ),
+                    ] else if (value == 2) ...[
+                      Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Expanded(
+                                flex: 1,
+                                child: CustomButton(
+                                    backgroundColor: AppColors.transparent,
+                                    text: 'Back',
+                                    borderColor: AppColors.transparent,
+                                    textColor: AppColors.primaryColor,
+                                    onPressed: () {
+                                      // Navigate to the previous onboarding screen
+                                      OnBoardingSlider.pageController
+                                          .previousPage(
+                                        duration:
+                                            const Duration(milliseconds: 300),
+                                        curve: Curves.easeIn,
+                                      );
+                                    }),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: CustomButton(
+                                  borderRadius: 8.r,
+                                  text: 'Next',
+                                  onPressed: () {
+                                    OnBoardingSlider.pageController.nextPage(
+                                      duration:
+                                          const Duration(milliseconds: 300),
+                                      curve: Curves.easeIn,
+                                    );
+                                    // push(
+                                    //     context: context,
+                                    //     route: Routes.loginRoute);
                                   },
                                 ),
                               ),
