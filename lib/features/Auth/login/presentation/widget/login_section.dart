@@ -17,7 +17,7 @@ class LoginSection extends StatelessWidget {
             controller: loginCubit.emailController,
             hintText: AppStrings.email,
             keyboardType: TextInputType.emailAddress,
-            obscureText: loginCubit.isObscure,
+            obscureText: false,
             validator: (String? value) {
               if (value == null || value.isEmpty) {
                 return 'please enter your email';
@@ -60,7 +60,9 @@ class LoginSection extends StatelessWidget {
           CustomButton(
             text: AppStrings.logIn,
             onPressed: () {
-              push( context: context, route: Routes.homeSection);
+              if(loginCubit.formKey.currentState!.validate()){
+                push(context: context, route: Routes.homeSection);
+              }
             },
           ),
         ],

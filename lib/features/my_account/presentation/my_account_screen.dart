@@ -1,3 +1,4 @@
+import 'package:fatto/config/routes/app_routes_helper.dart';
 import 'package:fatto/exports.dart';
 import 'package:fatto/features/my_account/presentation/widget/general_account_data.dart';
 import 'package:fatto/features/my_account/presentation/widget/header_profile_section.dart';
@@ -42,7 +43,9 @@ class MyAccountScreen extends StatelessWidget {
                     16.vs,
                     Padding(
                       padding:  EdgeInsets.all(16.r),
-                      child: GeneralAccountData(svgIconPath: AppAssets.logout, selectionName: 'Logout', onPressed: () {  },),
+                      child: GeneralAccountData(svgIconPath: AppAssets.logout, selectionName: 'Logout', onPressed: () {
+                        push(context: context, route: Routes.loginRoute);
+                      },),
                     ),
 
                   ],
