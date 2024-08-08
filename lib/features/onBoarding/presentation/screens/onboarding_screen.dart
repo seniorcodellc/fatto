@@ -157,9 +157,9 @@ class OnboardingScreen extends StatelessWidget {
                                           const Duration(milliseconds: 300),
                                       curve: Curves.easeIn,
                                     );
-                                    // push(
-                                    //     context: context,
-                                    //     route: Routes.loginRoute);
+                                    push(
+                                        context: context,
+                                        route: Routes.loginRoute);
                                   },
                                 ),
                               ),

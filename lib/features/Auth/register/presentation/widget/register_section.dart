@@ -107,7 +107,7 @@ class RegisterSection extends StatelessWidget {
             text: AppStrings.createAccount,
             onPressed: () {
               if(registerCubit.formKey.currentState!.validate()){
-                push( context: context, route: Routes.myAccountRoute);
+                push( context: context, route: Routes.productScreen);
               }
 
             },

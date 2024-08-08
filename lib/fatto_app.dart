@@ -1,6 +1,5 @@
 
 
-import 'package:fatto/features/Auth/login/presentation/login_screen.dart';
 
 import 'exports.dart';
 
@@ -28,9 +27,9 @@ class FattoApp extends StatelessWidget {
           useMaterial3: true,
         ),
     
-      initialRoute: Routes.loginRoute,
+      initialRoute: Routes.onBoardingRoute,
       onGenerateRoute: appRouter.generateRoute,
-      home:  const LoginScreen(),
+      home:  const OnboardingScreen(),
       )
     );
   }
