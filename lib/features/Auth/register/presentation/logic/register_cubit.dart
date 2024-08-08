@@ -10,7 +10,7 @@ class RegisterCubit extends Cubit<RegisterState> {
   TextEditingController lastNameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  GlobalKey formKey = GlobalKey<FormState>();
+  var formKey = GlobalKey<FormState>();
   bool isObscure = false;
   void changeSuffixIcon({required bool isObscured}) {
     isObscure = !isObscured;

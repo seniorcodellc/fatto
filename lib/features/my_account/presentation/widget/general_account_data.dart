@@ -7,41 +7,41 @@ class GeneralAccountData extends StatelessWidget {
   final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.sizeOf(context).width ,
-      child: Row(
-        children: [
-          SvgPicture.asset(svgIconPath,width: 28.w,height: 28.h,),
-          20.hs,
-          selectionName == 'Language' ? SizedBox(
-            width: MediaQuery.sizeOf(context).width * 0.7,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Text(
-                  selectionName,
-                  style: AppStyles.styleInterSemiBold16.copyWith(color: AppColors.graphite),
-                ),
-                const Spacer(),
-                Text(
-                  'English (US)',
-                  style: AppStyles.styleInterSemiBold16.copyWith(color: AppColors.graphite),
-                )
-              ],),
-          ): Text(
-            selectionName,
-            style: AppStyles.styleInterSemiBold16.copyWith(
-                color: selectionName == 'Logout'?AppColors.fireRed:AppColors.graphite,
-                fontWeight:selectionName == 'Logout'?FontWeight.w400 :selectionName == 'Edit Profile' ? FontWeight.w700:FontWeight.w600,
+    return GestureDetector(
+      onTap: onPressed,
+      child: SizedBox(
+        width: MediaQuery.sizeOf(context).width ,
+        child: Row(
+          children: [
+            SvgPicture.asset(svgIconPath,width: 28.w,height: 28.h,),
+            20.hs,
+            selectionName == 'Language' ? SizedBox(
+              width: MediaQuery.sizeOf(context).width * 0.7,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(
+                    selectionName,
+                    style: AppStyles.styleInterSemiBold16.copyWith(color: AppColors.graphite),
+                  ),
+                  const Spacer(),
+                  Text(
+                    'English (US)',
+                    style: AppStyles.styleInterSemiBold16.copyWith(color: AppColors.graphite),
+                  )
+                ],),
+            ): Text(
+              selectionName,
+              style: AppStyles.styleInterSemiBold16.copyWith(
+                  color: selectionName == 'Logout'?AppColors.fireRed:AppColors.graphite,
+                  fontWeight:selectionName == 'Logout'?FontWeight.w400 :selectionName == 'Edit Profile' ? FontWeight.w700:FontWeight.w600,
 
-            ),
-          ) ,
-          const Spacer(),
-          GestureDetector(
-              onTap: onPressed,
-              child: SvgPicture.asset(AppAssets.rightIcon)
-          ),
-        ],
+              ),
+            ) ,
+            const Spacer(),
+            SvgPicture.asset(AppAssets.rightIcon),
+          ],
+        ),
       ),
     );
   }

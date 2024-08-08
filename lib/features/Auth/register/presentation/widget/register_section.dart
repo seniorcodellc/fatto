@@ -18,7 +18,7 @@ class RegisterSection extends StatelessWidget {
             controller: registerCubit.firstNameController,
             hintText: AppStrings.firstName,
             keyboardType: TextInputType.name,
-            obscureText: registerCubit.isObscure,
+            obscureText: false,
             validator: (String? value) {
               if (value == null || value.isEmpty) {
                 return 'please enter your first name';
@@ -32,7 +32,7 @@ class RegisterSection extends StatelessWidget {
             controller: registerCubit.lastNameController,
             hintText: AppStrings.lastName,
             keyboardType: TextInputType.name,
-            obscureText: registerCubit.isObscure,
+            obscureText: false,
             validator: (String? value) {
               if (value == null || value.isEmpty) {
                 return 'please enter your last name';
@@ -46,7 +46,7 @@ class RegisterSection extends StatelessWidget {
             controller: registerCubit.emailController,
             hintText: AppStrings.email,
             keyboardType: TextInputType.emailAddress,
-            obscureText: registerCubit.isObscure,
+            obscureText:false,
             validator: (String? value) {
               if (value == null || value.isEmpty) {
                 return 'please enter your email';
@@ -106,7 +106,10 @@ class RegisterSection extends StatelessWidget {
           CustomButton(
             text: AppStrings.createAccount,
             onPressed: () {
-              push( context: context, route: Routes.homeSection);
+              if(registerCubit.formKey.currentState!.validate()){
+                push( context: context, route: Routes.productScreen);
+              }
+
             },
           ),
         ],

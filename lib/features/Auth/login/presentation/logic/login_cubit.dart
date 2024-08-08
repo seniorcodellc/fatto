@@ -8,7 +8,7 @@ class LoginCubit extends Cubit<LoginState> {
   static LoginCubit get(context) => BlocProvider.of(context);
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  GlobalKey formKey = GlobalKey<FormState>();
+  var formKey = GlobalKey<FormState>();
   bool isObscure = false;
   void changeSuffixIcon({required bool isObscured}) {
     isObscure = !isObscured;

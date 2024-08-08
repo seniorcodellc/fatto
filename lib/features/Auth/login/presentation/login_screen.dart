@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                               },
                               child: Text(
                                 AppStrings.register,
-                                style: AppStyles.styleInterRegular16.copyWith(
+                                style: AppStyles.styleInterRegular12.copyWith(
                                     color: AppColors.primaryColor),
                               ),
                             ),
