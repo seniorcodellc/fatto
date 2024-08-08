@@ -7,148 +7,98 @@ class ColorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double size = screenWidth * 0.1;
+    double spacing = size * 0.071;
+
     return SizedBox(
-      width: 42 * 4 + 3 * 3,
-      height: 42,
+      width: size * 4 + spacing * 3,
+      height: size,
       child: Stack(
         children: [
-          Positioned(
+          CircleWidget(
             left: 0,
-            top: 0,
-            child: Container(
-              width: 42,
-              height: 42,
-              decoration: const ShapeDecoration(
+            size: size,
+            spacing: spacing,
+            borderColor: const Color(0xFFC8C8C8),
+            fillColor: const Color(0xFFF68D8D),
+          ),
+          CircleWidget(
+            left: size + spacing,
+            size: size,
+            spacing: spacing,
+            borderColor: const Color(0xFFC8C8C8),
+            fillColor: const Color(0xFF8D98F6),
+          ),
+          CircleWidget(
+            left: (size + spacing) * 2,
+            size: size,
+            spacing: spacing,
+            borderColor: AppColors.lightSilver,
+            fillColor: AppColors.charcoal,
+          ),
+          CircleWidget(
+            left: (size + spacing) * 3,
+            size: size,
+            spacing: spacing,
+            borderColor: const Color(0xFFC8C8C8),
+            fillColor: const Color(0xFFDFDFDF),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class CircleWidget extends StatelessWidget {
+  final double left;
+  final double size;
+  final double spacing;
+  final Color borderColor;
+  final Color fillColor;
+
+  const CircleWidget({
+    super.key,
+    required this.left,
+    required this.size,
+    required this.spacing,
+    required this.borderColor,
+    required this.fillColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      left: left,
+      top: 0,
+      child: SizedBox(
+        width: size,
+        height: size,
+        child: Stack(
+          children: [
+            Container(
+              width: size,
+              height: size,
+              decoration: ShapeDecoration(
                 shape: OvalBorder(
-                  side: BorderSide(width: 1, color: Color(0xFFC8C8C8)),
+                  side: BorderSide(width: 1, color: borderColor),
                 ),
               ),
             ),
-          ),
-          Positioned(
-            left: 3,
-            top: 3,
-            child: Container(
-              width: 36,
-              height: 36,
-              decoration: const ShapeDecoration(
-                color: Color(0xFFF68D8D),
-                shape: OvalBorder(),
+            Positioned(
+              left: spacing,
+              top: spacing,
+              child: Container(
+                width: size - 2 * spacing,
+                height: size - 2 * spacing,
+                decoration: ShapeDecoration(
+                  color: fillColor,
+                  shape: const OvalBorder(),
+                ),
               ),
             ),
-          ),
-          Positioned(
-            left: 45,
-            top: 0,
-            child: SizedBox(
-              width: 42,
-              height: 42,
-              child: Stack(
-                children: [
-                  Positioned(
-                    left: 0,
-                    top: 0,
-                    child: Container(
-                      width: 42,
-                      height: 42,
-                      decoration: const ShapeDecoration(
-                        shape: OvalBorder(
-                          side: BorderSide(width: 1, color: Color(0xFFC8C8C8)),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 3,
-                    top: 3,
-                    child: Container(
-                      width: 36,
-                      height: 36,
-                      decoration: const ShapeDecoration(
-                        color: Color(0xFF8D98F6),
-                        shape: OvalBorder(),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            left: 90,
-            top: 0,
-            child: SizedBox(
-              width: 42,
-              height: 42,
-              child: Stack(
-                children: [
-                  Positioned(
-                    left: 0,
-                    top: 0,
-                    child: Container(
-                      width: 42,
-                      height: 42,
-                      decoration: const ShapeDecoration(
-                        shape: OvalBorder(
-                          side: BorderSide(width: 1, color: Color(0xFFC8C8C8)),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 3,
-                    top: 3,
-                    child: Container(
-                      width: 36,
-                      height: 36,
-                      decoration: const ShapeDecoration(
-                        color: Color(0xFF161616),
-                        shape: OvalBorder(),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Positioned(
-            left: 135,
-            top: 0,
-            child: SizedBox(
-              width: 42,
-              height: 42,
-              child: Stack(
-                children: [
-                  Positioned(
-                    left: 0,
-                    top: 0,
-                    child: Container(
-                      width: 42,
-                      height: 42,
-                      decoration: const ShapeDecoration(
-                        shape: OvalBorder(
-                          side: BorderSide(width: 1, color: Color(0xFFC8C8C8)),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 3,
-                    top: 3,
-                    child: Container(
-                      width: 36,
-                      height: 36,
-                      decoration: const ShapeDecoration(
-                        color: Color(0xFFDFDFDF),
-                        shape: OvalBorder(),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

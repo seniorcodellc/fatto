@@ -86,7 +86,7 @@ class ProductDetailsItem extends StatelessWidget {
                 SvgPicture.asset(AppAssets.heart),
                 const Padding(
                   padding: EdgeInsets.only(right: 12),
-                  child: MoreDetailsButton(
+                  child: CustomOrangeButton(
                     text: AppStrings.order,
                   ),
                 )
@@ -129,15 +129,15 @@ class ProductDetailsItem extends StatelessWidget {
   }
 }
 
-class MoreDetailsButton extends StatelessWidget {
-  const MoreDetailsButton({super.key, required this.text});
+class CustomOrangeButton extends StatelessWidget {
+  const CustomOrangeButton({super.key, required this.text});
   final String text;
 
   @override
   Widget build(BuildContext context) {
     return CustomButton(
       width: MediaQuery.sizeOf(context).width * 0.35,
-      height: 44.h,
+      height: MediaQuery.sizeOf(context).height * 0.05,
       text: text,
       onPressed: () {
         Navigator.push(
@@ -149,19 +149,3 @@ class MoreDetailsButton extends StatelessWidget {
     );
   }
 }
-
-// class MoreDetailsScreen extends StatelessWidget {
-//   const MoreDetailsScreen({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text("More Details"),
-//       ),
-//       body: const Center(
-//         child: Text("More Details Screen"),
-//       ),
-//     );
-//   }
-// }

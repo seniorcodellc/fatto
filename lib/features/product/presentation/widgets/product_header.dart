@@ -52,9 +52,9 @@ class ProductSliderWidget extends StatefulWidget {
 class _ProductSliderWidgetState extends State<ProductSliderWidget> {
   int currentIndex = 0;
   final List<String> images = [
+    AppAssets.brownCandy,
     AppAssets.productBag,
-    AppAssets.productBag,
-    AppAssets.productBag,
+    AppAssets.promotionFashion,
     AppAssets.productBag,
     AppAssets.productBag,
   ];
@@ -83,7 +83,7 @@ class _ProductSliderWidgetState extends State<ProductSliderWidget> {
               decoration: ShapeDecoration(
                 image: DecorationImage(
                   image: AssetImage(images[currentIndex]),
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
                 shape: RoundedRectangleBorder(
                   side: const BorderSide(width: 1, color: Colors.white),
