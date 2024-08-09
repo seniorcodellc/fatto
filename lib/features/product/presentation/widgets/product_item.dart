@@ -1,17 +1,13 @@
 import 'package:fatto/exports.dart';
 
 class ProductItem extends StatelessWidget {
-  const ProductItem({
-    super.key,
-  });
+  const ProductItem({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onVerticalDragUpdate: (details) {
-        // Detect the swipe gesture
-        if (details.primaryDelta! > 20) {
-          // this for drag down as i saw on the figma screen
+      onVerticalDragEnd: (details) {
+        if (details.primaryVelocity! < 0) {
           Navigator.push(
             context,
             MaterialPageRoute(
@@ -22,17 +18,11 @@ class ProductItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(
-            height: 16,
-          ),
+          const SizedBox(height: 16),
           const Text('Peponi', style: AppStyles.styleInterBold18),
-          const SizedBox(
-            height: 9,
-          ),
+          const SizedBox(height: 9),
           const Text('Crochet Bag', style: AppStyles.styleInterBold18),
-          const SizedBox(
-            height: 9,
-          ),
+          const SizedBox(height: 9),
           Row(
             children: [
               Text('\$ 256.90',
@@ -46,18 +36,14 @@ class ProductItem extends StatelessWidget {
                   decoration: TextDecoration.lineThrough,
                 ),
               ),
-              const SizedBox(
-                width: 4,
-              ),
+              const SizedBox(width: 4),
               Text('50% OFF',
                   style: AppStyles.styleInterRegular14.copyWith(
                     color: AppColors.slateGray,
                   )),
             ],
           ),
-          const SizedBox(
-            height: 16,
-          ),
+          const SizedBox(height: 16),
           Container(
             clipBehavior: Clip.antiAlias,
             decoration: const BoxDecoration(),
@@ -68,11 +54,10 @@ class ProductItem extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(right: 12),
                   child: MoreDetailsButton(),
-                )
+                ),
               ],
             ),
-            // SvgPicture.asset('assets/heart_unfilled.svg'),
-          )
+          ),
         ],
       ),
     );

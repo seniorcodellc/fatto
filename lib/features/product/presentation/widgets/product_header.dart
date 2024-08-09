@@ -97,13 +97,10 @@ class _ProductSliderWidgetState extends State<ProductSliderWidget> {
               child: Container(
                 width: 50,
                 height: 18,
-                decoration: ShapeDecoration(
-                  shape: RoundedRectangleBorder(
-                    side: const BorderSide(width: 1, color: Colors.white),
-                    borderRadius: BorderRadius.circular(
-                      6.50,
-                    ),
-                  ),
+                decoration: BoxDecoration(
+                  color: AppColors.sepia,
+                  borderRadius: BorderRadius.circular(6.50),
+                  border: Border.all(width: 1, color: Colors.white),
                 ),
                 child: Center(
                   child: Text('${currentIndex + 1}/5',
