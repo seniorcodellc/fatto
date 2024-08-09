@@ -1,4 +1,4 @@
-import 'package:fatto/features/product/presentation/screens/product_screen.dart';
+
 
 import 'exports.dart';
 
@@ -25,9 +25,9 @@ class FattoApp extends StatelessWidget {
             scaffoldBackgroundColor: AppColors.white,
             useMaterial3: true,
           ),
-          initialRoute: Routes.productScreen,
+          initialRoute: Routes.onBoardingRoute,
           onGenerateRoute: appRouter.generateRoute,
-          home: const ProductScreen(),
+          home: const OnboardingScreen(),
         ));
   }
 }
