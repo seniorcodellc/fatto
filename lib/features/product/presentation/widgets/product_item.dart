@@ -8,8 +8,10 @@ class ProductItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onVerticalDragEnd: (details) {
-        if (details.primaryVelocity! > 0) {
+      onVerticalDragUpdate: (details) {
+        // Detect the swipe gesture
+        if (details.primaryDelta! > 20) {
+          // this for drag down as i saw on the figma screen
           Navigator.push(
             context,
             MaterialPageRoute(
